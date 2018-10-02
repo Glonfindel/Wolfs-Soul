@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 093675f5e707c7f458c94e11b522dcaa
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: GOLEM
+    100002: //RootNode
+    100004: GOLEM_
+    100006: GOLEM_ Head
+    100008: GOLEM_ L Calf
+    100010: GOLEM_ L Clavicle
+    100012: GOLEM_ L Finger0
+    100014: GOLEM_ L Finger01
+    100016: GOLEM_ L Finger1
+    100018: GOLEM_ L Finger11
+    100020: GOLEM_ L Finger2
+    100022: GOLEM_ L Finger21
+    100024: GOLEM_ L Foot
+    100026: GOLEM_ L Forearm
+    100028: GOLEM_ L Hand
+    100030: GOLEM_ L Thigh
+    100032: GOLEM_ L UpperArm
+    100034: GOLEM_ Neck
+    100036: GOLEM_ Pelvis
+    100038: GOLEM_ Queue de cheval 1
+    100040: GOLEM_ R Calf
+    100042: GOLEM_ R Clavicle
+    100044: GOLEM_ R Finger0
+    100046: GOLEM_ R Finger01
+    100048: GOLEM_ R Finger1
+    100050: GOLEM_ R Finger11
+    100052: GOLEM_ R Finger2
+    100054: GOLEM_ R Finger21
+    100056: GOLEM_ R Foot
+    100058: GOLEM_ R Forearm
+    100060: GOLEM_ R Hand
+    100062: GOLEM_ R Thigh
+    100064: GOLEM_ R UpperArm
+    100066: GOLEM_ Spine
+    100068: GOLEM_ Spine1
+    400000: GOLEM
+    400002: //RootNode
+    400004: GOLEM_
+    400006: GOLEM_ Head
+    400008: GOLEM_ L Calf
+    400010: GOLEM_ L Clavicle
+    400012: GOLEM_ L Finger0
+    400014: GOLEM_ L Finger01
+    400016: GOLEM_ L Finger1
+    400018: GOLEM_ L Finger11
+    400020: GOLEM_ L Finger2
+    400022: GOLEM_ L Finger21
+    400024: GOLEM_ L Foot
+    400026: GOLEM_ L Forearm
+    400028: GOLEM_ L Hand
+    400030: GOLEM_ L Thigh
+    400032: GOLEM_ L UpperArm
+    400034: GOLEM_ Neck
+    400036: GOLEM_ Pelvis
+    400038: GOLEM_ Queue de cheval 1
+    400040: GOLEM_ R Calf
+    400042: GOLEM_ R Clavicle
+    400044: GOLEM_ R Finger0
+    400046: GOLEM_ R Finger01
+    400048: GOLEM_ R Finger1
+    400050: GOLEM_ R Finger11
+    400052: GOLEM_ R Finger2
+    400054: GOLEM_ R Finger21
+    400056: GOLEM_ R Foot
+    400058: GOLEM_ R Forearm
+    400060: GOLEM_ R Hand
+    400062: GOLEM_ R Thigh
+    400064: GOLEM_ R UpperArm
+    400066: GOLEM_ Spine
+    400068: GOLEM_ Spine1
+    2100000: default
+    4300000: GOLEM
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: GOLEM
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

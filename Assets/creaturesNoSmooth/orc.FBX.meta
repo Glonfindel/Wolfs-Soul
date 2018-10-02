@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: c8ea7d69fc20719468f027625b3cf7c7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: axe001
+    100002: BELLY_ARMOR
+    100004: FOREARM_PAD_L
+    100006: FOREARM_PAD_L001
+    100008: //RootNode
+    100010: ORC_
+    100012: ORC_ Head
+    100014: ORC_ L Calf
+    100016: ORC_ L Clavicle
+    100018: ORC_ L Finger0
+    100020: ORC_ L Finger01
+    100022: ORC_ L Finger02
+    100024: ORC_ L Finger1
+    100026: ORC_ L Finger11
+    100028: ORC_ L Finger12
+    100030: ORC_ L Finger2
+    100032: ORC_ L Finger21
+    100034: ORC_ L Finger22
+    100036: ORC_ L Finger3
+    100038: ORC_ L Finger31
+    100040: ORC_ L Finger32
+    100042: ORC_ L Foot
+    100044: ORC_ L Forearm
+    100046: ORC_ L Hand
+    100048: ORC_ L Thigh
+    100050: ORC_ L Toe0
+    100052: ORC_ L UpperArm
+    100054: ORC_ Neck
+    100056: ORC_ Pelvis
+    100058: ORC_ Queue de cheval 1
+    100060: ORC_ Queue de cheval 11
+    100062: ORC_ Queue de cheval 12
+    100064: ORC_ Queue de cheval 13
+    100066: ORC_ Queue de cheval 2
+    100068: ORC_ R Calf
+    100070: ORC_ R Clavicle
+    100072: ORC_ R Finger0
+    100074: ORC_ R Finger01
+    100076: ORC_ R Finger02
+    100078: ORC_ R Finger1
+    100080: ORC_ R Finger11
+    100082: ORC_ R Finger12
+    100084: ORC_ R Finger2
+    100086: ORC_ R Finger21
+    100088: ORC_ R Finger22
+    100090: ORC_ R Finger3
+    100092: ORC_ R Finger31
+    100094: ORC_ R Finger32
+    100096: ORC_ R Foot
+    100098: ORC_ R Forearm
+    100100: ORC_ R Hand
+    100102: ORC_ R Thigh
+    100104: ORC_ R Toe0
+    100106: ORC_ R UpperArm
+    100108: ORC_ Spine
+    100110: ORC_ Spine1
+    100112: ORC_BODY
+    100114: ORC_PONYTAIL
+    100116: PELT_SKIN_BACK_1
+    100118: PELT_SKIN_BACK_2
+    100120: PELT_SKIN_BACK_3
+    100122: PELT_SKIN_FRONT_1
+    100124: PELT_SKIN_FRONT_2
+    100126: PELT_SKIN_FRONT_3
+    100128: SHOULDER_PAD_L
+    100130: SHOULDER_PAD_R
+    100132: SHOULDER_PADS
+    400000: axe001
+    400002: BELLY_ARMOR
+    400004: FOREARM_PAD_L
+    400006: FOREARM_PAD_L001
+    400008: //RootNode
+    400010: ORC_
+    400012: ORC_ Head
+    400014: ORC_ L Calf
+    400016: ORC_ L Clavicle
+    400018: ORC_ L Finger0
+    400020: ORC_ L Finger01
+    400022: ORC_ L Finger02
+    400024: ORC_ L Finger1
+    400026: ORC_ L Finger11
+    400028: ORC_ L Finger12
+    400030: ORC_ L Finger2
+    400032: ORC_ L Finger21
+    400034: ORC_ L Finger22
+    400036: ORC_ L Finger3
+    400038: ORC_ L Finger31
+    400040: ORC_ L Finger32
+    400042: ORC_ L Foot
+    400044: ORC_ L Forearm
+    400046: ORC_ L Hand
+    400048: ORC_ L Thigh
+    400050: ORC_ L Toe0
+    400052: ORC_ L UpperArm
+    400054: ORC_ Neck
+    400056: ORC_ Pelvis
+    400058: ORC_ Queue de cheval 1
+    400060: ORC_ Queue de cheval 11
+    400062: ORC_ Queue de cheval 12
+    400064: ORC_ Queue de cheval 13
+    400066: ORC_ Queue de cheval 2
+    400068: ORC_ R Calf
+    400070: ORC_ R Clavicle
+    400072: ORC_ R Finger0
+    400074: ORC_ R Finger01
+    400076: ORC_ R Finger02
+    400078: ORC_ R Finger1
+    400080: ORC_ R Finger11
+    400082: ORC_ R Finger12
+    400084: ORC_ R Finger2
+    400086: ORC_ R Finger21
+    400088: ORC_ R Finger22
+    400090: ORC_ R Finger3
+    400092: ORC_ R Finger31
+    400094: ORC_ R Finger32
+    400096: ORC_ R Foot
+    400098: ORC_ R Forearm
+    400100: ORC_ R Hand
+    400102: ORC_ R Thigh
+    400104: ORC_ R Toe0
+    400106: ORC_ R UpperArm
+    400108: ORC_ Spine
+    400110: ORC_ Spine1
+    400112: ORC_BODY
+    400114: ORC_PONYTAIL
+    400116: PELT_SKIN_BACK_1
+    400118: PELT_SKIN_BACK_2
+    400120: PELT_SKIN_BACK_3
+    400122: PELT_SKIN_FRONT_1
+    400124: PELT_SKIN_FRONT_2
+    400126: PELT_SKIN_FRONT_3
+    400128: SHOULDER_PAD_L
+    400130: SHOULDER_PAD_R
+    400132: SHOULDER_PADS
+    2100000: ORC_GEAR
+    2100002: ORC_AXE
+    2100004: ORC_BODY
+    2300000: axe001
+    2300002: FOREARM_PAD_L
+    2300004: FOREARM_PAD_L001
+    3300000: axe001
+    3300002: FOREARM_PAD_L
+    3300004: FOREARM_PAD_L001
+    4300000: FOREARM_PAD_L
+    4300002: axe001
+    4300004: FOREARM_PAD_L001
+    4300006: ORC_PONYTAIL
+    4300008: BELLY_ARMOR
+    4300010: SHOULDER_PADS
+    4300012: ORC_BODY
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: BELLY_ARMOR
+    13700002: ORC_BODY
+    13700004: ORC_PONYTAIL
+    13700006: SHOULDER_PADS
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

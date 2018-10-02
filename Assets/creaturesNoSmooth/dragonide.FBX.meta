@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: 60259a391768953409c0c2be9ee217e8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: belly_armor001
+    100002: //RootNode
+    100004: DRAGONIDE_
+    100006: DRAGONIDE_ Head
+    100008: DRAGONIDE_ L Calf
+    100010: DRAGONIDE_ L Clavicle
+    100012: DRAGONIDE_ L Finger0
+    100014: DRAGONIDE_ L Finger01
+    100016: DRAGONIDE_ L Finger02
+    100018: DRAGONIDE_ L Finger1
+    100020: DRAGONIDE_ L Finger11
+    100022: DRAGONIDE_ L Finger12
+    100024: DRAGONIDE_ L Foot
+    100026: DRAGONIDE_ L Forearm
+    100028: DRAGONIDE_ L Hand
+    100030: DRAGONIDE_ L HorseLink
+    100032: DRAGONIDE_ L Thigh
+    100034: DRAGONIDE_ L Toe0
+    100036: DRAGONIDE_ L Toe01
+    100038: DRAGONIDE_ L Toe02
+    100040: DRAGONIDE_ L UpperArm
+    100042: DRAGONIDE_ Neck
+    100044: DRAGONIDE_ Neck1
+    100046: DRAGONIDE_ Pelvis
+    100048: DRAGONIDE_ Queue de cheval 1
+    100050: DRAGONIDE_ R Calf
+    100052: DRAGONIDE_ R Clavicle
+    100054: DRAGONIDE_ R Finger0
+    100056: DRAGONIDE_ R Finger01
+    100058: DRAGONIDE_ R Finger02
+    100060: DRAGONIDE_ R Finger1
+    100062: DRAGONIDE_ R Finger11
+    100064: DRAGONIDE_ R Finger12
+    100066: DRAGONIDE_ R Foot
+    100068: DRAGONIDE_ R Forearm
+    100070: DRAGONIDE_ R Hand
+    100072: DRAGONIDE_ R HorseLink
+    100074: DRAGONIDE_ R Thigh
+    100076: DRAGONIDE_ R Toe0
+    100078: DRAGONIDE_ R Toe01
+    100080: DRAGONIDE_ R Toe02
+    100082: DRAGONIDE_ R UpperArm
+    100084: DRAGONIDE_ Spine
+    100086: DRAGONIDE_ Spine1
+    100088: DRAGONIDE_ Tail
+    100090: DRAGONIDE_ Tail1
+    100092: DRAGONIDE_ Tail2
+    100094: DRAGONIDE_ Tail3
+    100096: DRAGONIDE_ Tail4
+    100098: DRAGONIDE_ Tail5
+    100100: DRAGONIDE_ Tail6
+    100102: DRAGONIDE_ Tail7
+    100104: DRAGONIDE_BODY
+    100106: fighting_skirt
+    100108: forearm_armor
+    100110: shoulder_armor
+    100112: spike_bracelet
+    100114: WARHAMMER
+    400000: belly_armor001
+    400002: //RootNode
+    400004: DRAGONIDE_
+    400006: DRAGONIDE_ Head
+    400008: DRAGONIDE_ L Calf
+    400010: DRAGONIDE_ L Clavicle
+    400012: DRAGONIDE_ L Finger0
+    400014: DRAGONIDE_ L Finger01
+    400016: DRAGONIDE_ L Finger02
+    400018: DRAGONIDE_ L Finger1
+    400020: DRAGONIDE_ L Finger11
+    400022: DRAGONIDE_ L Finger12
+    400024: DRAGONIDE_ L Foot
+    400026: DRAGONIDE_ L Forearm
+    400028: DRAGONIDE_ L Hand
+    400030: DRAGONIDE_ L HorseLink
+    400032: DRAGONIDE_ L Thigh
+    400034: DRAGONIDE_ L Toe0
+    400036: DRAGONIDE_ L Toe01
+    400038: DRAGONIDE_ L Toe02
+    400040: DRAGONIDE_ L UpperArm
+    400042: DRAGONIDE_ Neck
+    400044: DRAGONIDE_ Neck1
+    400046: DRAGONIDE_ Pelvis
+    400048: DRAGONIDE_ Queue de cheval 1
+    400050: DRAGONIDE_ R Calf
+    400052: DRAGONIDE_ R Clavicle
+    400054: DRAGONIDE_ R Finger0
+    400056: DRAGONIDE_ R Finger01
+    400058: DRAGONIDE_ R Finger02
+    400060: DRAGONIDE_ R Finger1
+    400062: DRAGONIDE_ R Finger11
+    400064: DRAGONIDE_ R Finger12
+    400066: DRAGONIDE_ R Foot
+    400068: DRAGONIDE_ R Forearm
+    400070: DRAGONIDE_ R Hand
+    400072: DRAGONIDE_ R HorseLink
+    400074: DRAGONIDE_ R Thigh
+    400076: DRAGONIDE_ R Toe0
+    400078: DRAGONIDE_ R Toe01
+    400080: DRAGONIDE_ R Toe02
+    400082: DRAGONIDE_ R UpperArm
+    400084: DRAGONIDE_ Spine
+    400086: DRAGONIDE_ Spine1
+    400088: DRAGONIDE_ Tail
+    400090: DRAGONIDE_ Tail1
+    400092: DRAGONIDE_ Tail2
+    400094: DRAGONIDE_ Tail3
+    400096: DRAGONIDE_ Tail4
+    400098: DRAGONIDE_ Tail5
+    400100: DRAGONIDE_ Tail6
+    400102: DRAGONIDE_ Tail7
+    400104: DRAGONIDE_BODY
+    400106: fighting_skirt
+    400108: forearm_armor
+    400110: shoulder_armor
+    400112: spike_bracelet
+    400114: WARHAMMER
+    2100000: DRAGONIDE_PROPS
+    2100002: WARHAMMER
+    2100004: default
+    2300000: forearm_armor
+    2300002: spike_bracelet
+    2300004: WARHAMMER
+    3300000: forearm_armor
+    3300002: spike_bracelet
+    3300004: WARHAMMER
+    4300000: forearm_armor
+    4300002: WARHAMMER
+    4300004: spike_bracelet
+    4300006: shoulder_armor
+    4300008: fighting_skirt
+    4300010: DRAGONIDE_BODY
+    4300012: belly_armor001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: belly_armor001
+    13700002: DRAGONIDE_BODY
+    13700004: fighting_skirt
+    13700006: shoulder_armor
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
