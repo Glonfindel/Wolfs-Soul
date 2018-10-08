@@ -24,7 +24,7 @@ public class MovingObject : MonoBehaviour {
             if (spot.fitsHere == gameObject)
             {
                 spot.isFull = true;
-                Instantiate(playSound, transform);
+                Instantiate(playSound, transform.position,Quaternion.identity);
                 gameObject.transform.position = spot.transform.position+offset;
                 Destroy(rigid);
                 gameObject.isStatic = true;

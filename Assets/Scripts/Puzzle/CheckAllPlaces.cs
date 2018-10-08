@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CheckAllPlaces : MonoBehaviour {
 
-    public GameObject enemy;
+    public event Action OnComplete = delegate { };
     public GameObject puzzleParent;
     private ObjectFinalSpot[] objectFinalSpots;
 
@@ -19,6 +20,6 @@ public class CheckAllPlaces : MonoBehaviour {
         {
             if (!objFS.isFull) return;
         }
-        Instantiate(enemy, transform);
+        OnComplete();
 	}
 }
