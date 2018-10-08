@@ -107,7 +107,7 @@ ModelImporter:
       name: jump
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 25
+      lastFrame: 3
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -127,112 +127,8 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: ROOT_
-        weight: 1
-      - path: ROOT_/FantasyWolf_
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ L Thigh
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ L Thigh/FantasyWolf_
-          L Calf
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ L Thigh/FantasyWolf_
-          L Calf/FantasyWolf_ L HorseLink
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ L Thigh/FantasyWolf_
-          L Calf/FantasyWolf_ L HorseLink/FantasyWolf_ L Foot
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ R Thigh
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ R Thigh/FantasyWolf_
-          R Calf
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ R Thigh/FantasyWolf_
-          R Calf/FantasyWolf_ R HorseLink
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ R Thigh/FantasyWolf_
-          R Calf/FantasyWolf_ R HorseLink/FantasyWolf_ R Foot
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ L Clavicle
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ L Clavicle/FantasyWolf_ L UpperArm
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ L Clavicle/FantasyWolf_ L UpperArm/FantasyWolf_ L Forearm
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ L Clavicle/FantasyWolf_ L UpperArm/FantasyWolf_ L Forearm/FantasyWolf_
-          L Hand
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ L Clavicle/FantasyWolf_ L UpperArm/FantasyWolf_ L Forearm/FantasyWolf_
-          L Hand/FantasyWolf_ L Finger0
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ Neck
-        weight: 0
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ Neck/FantasyWolf_ Neck1
-        weight: 0
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ Neck/FantasyWolf_ Neck1/FantasyWolf_ Neck2
-        weight: 0
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ Neck/FantasyWolf_ Neck1/FantasyWolf_ Neck2/FantasyWolf_
-          Head
-        weight: 0
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ Neck/FantasyWolf_ Neck1/FantasyWolf_ Neck2/FantasyWolf_
-          Head/FantasyWolf_ Ponytail1
-        weight: 0
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ R Clavicle
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ R Clavicle/FantasyWolf_ R UpperArm
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ R Clavicle/FantasyWolf_ R UpperArm/FantasyWolf_ R Forearm
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ R Clavicle/FantasyWolf_ R UpperArm/FantasyWolf_ R Forearm/FantasyWolf_
-          R Hand
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Spine/FantasyWolf_
-          Spine1/FantasyWolf_ R Clavicle/FantasyWolf_ R UpperArm/FantasyWolf_ R Forearm/FantasyWolf_
-          R Hand/FantasyWolf_ R Finger0
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Tail
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Tail/FantasyWolf_
-          Tail1
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Tail/FantasyWolf_
-          Tail1/FantasyWolf_ Tail2
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Tail/FantasyWolf_
-          Tail1/FantasyWolf_ Tail2/FantasyWolf_ Tail3
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Tail/FantasyWolf_
-          Tail1/FantasyWolf_ Tail2/FantasyWolf_ Tail3/FantasyWolf_ Tail4
-        weight: 1
-      - path: ROOT_/FantasyWolf_/FantasyWolf_ Pelvis/FantasyWolf_ Tail/FantasyWolf_
-          Tail1/FantasyWolf_ Tail2/FantasyWolf_ Tail3/FantasyWolf_ Tail4/FantasyWolf_
-          Tail5
-        weight: 1
-      maskType: 0
+      transformMask: []
+      maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     isReadable: 1

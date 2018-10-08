@@ -9,7 +9,6 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float turnSpeed = 100f;
     [SerializeField] private float jumpPower = 5f;
     public bool IsGrounded { get; private set; }
-
     private Rigidbody rigidbody;
     private CharacterInput characterInput;
 
