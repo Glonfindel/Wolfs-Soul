@@ -3,26 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterHealth : MonoBehaviour
+public class Health : MonoBehaviour, IDamageable
 {
 
     [SerializeField] private int maxHealth = 100;
     private int health;
+    public event Action OnDie = delegate { };
 
     private void Awake()
     {
         health = maxHealth;
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
+        if (health <= 0) return;
+
         health -= damage;
         if (health <= 0)
-            Die();
+            OnDie();
     }
 
-    private void Die()
-    {
-
-    }
 }

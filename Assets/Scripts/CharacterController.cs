@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterController : MonoBehaviour
 {
 
     [SerializeField] private float moveSpeed = 5f;
@@ -11,17 +11,21 @@ public class CharacterMovement : MonoBehaviour
     public bool IsGrounded { get; private set; }
     private Rigidbody rigidbody;
     private CharacterInput characterInput;
+    private Health health;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
         characterInput = GetComponent<CharacterInput>();
+        health = GetComponent<Health>();
         characterInput.OnJump += HandleJump;
+        health.OnDie += HandleDeath;
     }
 
     private void OnDestroy()
     {
         characterInput.OnJump -= HandleJump;
+        health.OnDie -= HandleDeath;
     }
 
     private void Update()
@@ -35,6 +39,11 @@ public class CharacterMovement : MonoBehaviour
     {
         if (IsGrounded)
             rigidbody.AddForce(characterInput.Vertical * transform.forward * jumpPower + Vector3.up * jumpPower, ForceMode.Impulse);
+    }
+
+    private void HandleDeath()
+    {
+        characterInput.enabled = false;
     }
 
 }
