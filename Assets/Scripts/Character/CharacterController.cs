@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -8,6 +9,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float turnSpeed = 100f;
     [SerializeField] private float jumpPower = 5f;
+    public Dictionary<string, AttackComponent> Attacks = new Dictionary<string, AttackComponent>();
     public bool IsGrounded { get; private set; }
     private Rigidbody rigidbody;
     private CharacterInput characterInput;
@@ -20,6 +22,8 @@ public class CharacterController : MonoBehaviour
         health = GetComponent<Health>();
         characterInput.OnJump += HandleJump;
         health.OnDie += HandleDeath;
+        Attacks = GetComponentsInChildren<AttackComponent>().ToDictionary(e => e.name);
+        SetAllAttacksActive(false);
     }
 
     private void OnDestroy()
@@ -44,6 +48,19 @@ public class CharacterController : MonoBehaviour
     private void HandleDeath()
     {
         characterInput.enabled = false;
+    }
+
+    public void SetAllAttacksActive(bool active = true)
+    {
+        foreach (var attack in Attacks.Values)
+        {
+            attack.gameObject.SetActive(active);
+        }
+    }
+
+    public void SetAttackActive(string name, bool active = true)
+    {
+        Attacks[name].gameObject.SetActive(active);
     }
 
 }

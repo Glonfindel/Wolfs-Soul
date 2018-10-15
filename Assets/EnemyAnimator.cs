@@ -2,50 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterAnimator : MonoBehaviour
+public class EnemyAnimator : MonoBehaviour
 {
 
     private Animator animator;
-    private CharacterController characterController;
-    private CharacterInput characterInput;
+    private EnemyController enemyController;
     private Health health;
 
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        characterInput = GetComponent<CharacterInput>();
-        characterController = GetComponent<CharacterController>();
+        enemyController = GetComponent<EnemyController>();
         health = GetComponent<Health>();
-        characterInput.OnMeleeAttack += HandleMeleeAttack;
-        characterInput.OnRangeAttack += HandleRangeAttack;
+        enemyController.OnMeleeAttack += HandleMeleeAttack;
         health.OnDie += HandleDeath;
         health.OnDamageTaken += HandleGetHit;
     }
 
     private void OnDestroy()
-    { 
-        characterInput.OnMeleeAttack -= HandleMeleeAttack;
-        characterInput.OnRangeAttack -= HandleRangeAttack;
+    {
+        enemyController.OnMeleeAttack -= HandleMeleeAttack;
         health.OnDie -= HandleDeath;
         health.OnDamageTaken -= HandleGetHit;
     }
 
     private void Update()
     {
-        animator.SetFloat("Vertical", characterInput.Vertical);
-        animator.SetBool("Jump", characterController.IsGrounded && characterInput.Jump);
+        animator.SetFloat("Vertical", enemyController.ai.velocity.magnitude);
         animator.SetBool("CancelIdleAction", Input.anyKey);
-        animator.SetBool("Grounded", characterController.IsGrounded);
+        animator.SetBool("Grounded", true);
     }
 
     private void HandleMeleeAttack()
     {
         animator.Play("MeleeAttack");
-    }
-
-    private void HandleRangeAttack()
-    {
-        animator.Play("RangeAttack");
     }
 
     private void HandleGetHit()

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -9,29 +10,29 @@ public class EnemyController : MonoBehaviour
     public float lookRadius = 10f;
 
     private Transform target;
-    private NavMeshAgent ai;
+    public NavMeshAgent ai { get; private set; }
+    public event Action OnMeleeAttack = delegate { };
 
-	void Start ()
-	{
-	    target = GameObject.FindGameObjectWithTag("Player").transform;
-	    ai = GetComponent<NavMeshAgent>();
-	}
-	
-	void Update ()
-	{
-	    float distance = Vector3.Distance(target.position, transform.position);
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        ai = GetComponent<NavMeshAgent>();
+    }
 
-	    if (distance <= lookRadius)
-	    {
-	        ai.SetDestination(target.position);
+    void Update()
+    {
+        float distance = Vector3.Distance(target.position, transform.position);
 
-	        if (distance <= ai.stoppingDistance)
-	        {
-	            FaceTarget();
+        if (distance <= lookRadius)
+        {
+            ai.SetDestination(target.position);
 
-	        }
-	    }
-	}
+            if (distance <= ai.stoppingDistance)
+            {
+                FaceTarget();
+            }
+        }
+    }
 
     void FaceTarget()
     {

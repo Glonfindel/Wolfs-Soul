@@ -6,22 +6,25 @@ using UnityEngine;
 public class Health : MonoBehaviour, IDamageable
 {
 
-    [SerializeField] private int maxHealth = 100;
-    private int health;
+    [SerializeField] private float maxHealth = 100;
+    private float health;
     public event Action OnDie = delegate { };
+    public event Action OnDamageTaken = delegate { };
 
     private void Awake()
     {
         health = maxHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (health <= 0) return;
 
         health -= damage;
         if (health <= 0)
             OnDie();
+        else
+            OnDamageTaken();
     }
 
 }
