@@ -33,19 +33,19 @@ public class CharacterAnimator : MonoBehaviour
     private void Update()
     {
         animator.SetFloat("Vertical", characterInput.Vertical);
-        animator.SetBool("Jump", characterController.IsGrounded && characterInput.Jump);
+        animator.SetBool("Jump", characterInput.Jump);
         animator.SetBool("CancelIdleAction", Input.anyKey);
         animator.SetBool("Grounded", characterController.IsGrounded);
     }
 
     private void HandleMeleeAttack()
     {
-        animator.Play("MeleeAttack");
+        animator.SetTrigger("MeleeAttack");
     }
 
     private void HandleRangeAttack()
     {
-        animator.Play("RangeAttack");
+        animator.SetTrigger("RangeAttack");
     }
 
     private void HandleGetHit()

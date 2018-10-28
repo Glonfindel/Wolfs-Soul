@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c33557b38b6440942839b8bea25110bd, type: 3}
   m_Name: Wolf
   m_EditorClassIdentifier: 
-  hp: 0
+  hp: 100
   damage: 0
   attackSpeed: 0
-  movementSpeed: 0
-  rotateSpeed: 0
-  jumpPower: 0
+  movementSpeed: 5
+  rotateSpeed: 100
+  jumpPower: 5
