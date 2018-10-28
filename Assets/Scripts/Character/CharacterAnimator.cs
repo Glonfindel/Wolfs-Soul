@@ -49,7 +49,8 @@ public class CharacterAnimator : MonoBehaviour
 
     private void HandleGetHit()
     {
-        animator.Play("GetHit");
+        if (Random.Range(0f, 100f) < 30)
+            animator.Play("GetHit");
     }
 
     private void HandleDeath()

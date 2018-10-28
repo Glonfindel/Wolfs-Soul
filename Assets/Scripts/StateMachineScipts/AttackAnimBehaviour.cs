@@ -9,7 +9,7 @@ public class AttackAnimBehaviour : StateMachineBehaviour
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        CharacterController character = animator.GetComponentInParent<CharacterController>();
+        Controller character = animator.GetComponentInParent<Controller>();
         if (character)
         {
             character.SetAllAttacksActive(false);
@@ -18,7 +18,7 @@ public class AttackAnimBehaviour : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        CharacterController character = animator.GetComponentInParent<CharacterController>();
+        Controller character = animator.GetComponentInParent<Controller>();
         if (character && !animator.IsInTransition(0))
         {
             if (!string.IsNullOrEmpty(AttackName))
@@ -30,7 +30,7 @@ public class AttackAnimBehaviour : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        CharacterController character = animator.GetComponentInParent<CharacterController>();
+        Controller character = animator.GetComponentInParent<Controller>();
         if (character)
         {
             character.SetAllAttacksActive(false);

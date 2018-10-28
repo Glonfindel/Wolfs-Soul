@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4612772956218410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4818920860865968}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ROOT_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4103428672987226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Neck1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4820342162352780}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Tail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4038983210537422}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4589169842876126}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4416881843727938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4591340076320098}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4348444059133400}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Tail5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4339742449280732}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Tail2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4152755764918702}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4840815224250438}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Ponytail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 4359335115381982}
   - component: {fileID: 135009935251725504}
   - component: {fileID: 114151602751172544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MeleeAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4528267105814884}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4187494314690810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R Finger0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4973143195195956}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Tail4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4242630376177192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4921629605036910}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4092536979066662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4522971473682470}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4178640965146670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4235037239377958}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4455000684475202}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4985515819395382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4358279443393998}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L Finger0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4221215763931268}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4444447104360770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Neck2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4002676637476204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Tail3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 114132060850023844}
   - component: {fileID: 114659903542855050}
   - component: {fileID: 114527255531765134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4886925012687462}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4988330176154798}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4836820163457944}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 4512720466348964}
   - component: {fileID: 135992752524063220}
   - component: {fileID: 114303926291307018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RangeAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4213509937395618}
   - component: {fileID: 95806268918195778}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wolf_unsmoothed3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4758823490931536}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4364419093508002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4149293756902846}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4244026237250594}
   - component: {fileID: 137465972162207710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4126100094046500}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FantasyWolf_ L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1180,7 +1180,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 1.5, z: 2.5}
+  m_Size: {x: 0.75, y: 1.5, z: 2}
   m_Center: {x: 0, y: 0.75, z: 0}
 --- !u!95 &95806268918195778
 Animator:
@@ -1247,7 +1247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1978d59036208e64a9876d57efc10282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
 --- !u!114 &114659903542855050
 MonoBehaviour:
   m_ObjectHideFlags: 1

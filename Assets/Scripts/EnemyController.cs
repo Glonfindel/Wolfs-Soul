@@ -3,15 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : Controller
 {
-
     public float lookRadius = 10f;
-
     private Transform target;
     public NavMeshAgent ai { get; private set; }
-    public event Action OnMeleeAttack = delegate { };
+    public event Action<Dictionary<string, AttackComponent>> OnMeleeAttack = delegate { };
+    private float lastAttackTime;
 
     void Start()
     {
@@ -23,13 +23,18 @@ public class EnemyController : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if (distance <= lookRadius)
+        if (distance <= lookRadius && ai.enabled)
         {
             ai.SetDestination(target.position);
 
             if (distance <= ai.stoppingDistance)
             {
                 FaceTarget();
+                if (lastAttackTime + 2 <= Time.time)
+                {
+                    lastAttackTime = Time.time;
+                    OnMeleeAttack(Attacks);
+                }
             }
         }
     }
@@ -46,4 +51,5 @@ public class EnemyController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
+
 }

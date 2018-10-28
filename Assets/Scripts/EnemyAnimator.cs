@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EnemyAnimator : MonoBehaviour
@@ -14,14 +15,14 @@ public class EnemyAnimator : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         enemyController = GetComponent<EnemyController>();
         health = GetComponent<Health>();
-        enemyController.OnMeleeAttack += HandleMeleeAttack;
+        enemyController.OnMeleeAttack += HandleAttack;
         health.OnDie += HandleDeath;
         health.OnDamageTaken += HandleGetHit;
     }
 
     private void OnDestroy()
     {
-        enemyController.OnMeleeAttack -= HandleMeleeAttack;
+        enemyController.OnMeleeAttack -= HandleAttack;
         health.OnDie -= HandleDeath;
         health.OnDamageTaken -= HandleGetHit;
     }
@@ -33,18 +34,21 @@ public class EnemyAnimator : MonoBehaviour
         animator.SetBool("Grounded", true);
     }
 
-    private void HandleMeleeAttack()
+    private void HandleAttack(Dictionary<string, AttackComponent> attacks)
     {
-        animator.Play("MeleeAttack");
+        animator.SetTrigger(attacks.Keys.ToList()[0]);
     }
 
     private void HandleGetHit()
     {
-        animator.Play("GetHit");
+        if (Random.Range(0f, 100f) < 30)
+            animator.Play("GetHit");
     }
 
     private void HandleDeath()
     {
+        enemyController.ai.enabled = false;
+        enemyController.GetComponentInChildren<FaceCamera>().gameObject.SetActive(false);
         animator.Play("Death");
     }
 
