@@ -10,6 +10,7 @@ public class Health : MonoBehaviour, IDamageable
     private float health;
     public event Action OnDie = delegate { };
     public event Action OnDamageTaken = delegate { };
+    public float HealthAsPercentage { get { return health / maxHealth; } }
 
     private void Awake()
     {

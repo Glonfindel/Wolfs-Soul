@@ -10,21 +10,21 @@ public class CharacterController : MonoBehaviour
     public bool IsGrounded { get; private set; }
     public Rigidbody Rigidbody { get; private set; }
     public CharacterInput Input { get; private set; }
-    private Health health;
+    public Health Health { get; private set; }
 
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
         Input = GetComponent<CharacterInput>();
-        health = GetComponent<Health>();
-        health.OnDie += HandleDeath;
+        Health = GetComponent<Health>();
+        Health.OnDie += HandleDeath;
         Attacks = GetComponentsInChildren<AttackComponent>().ToDictionary(e => e.name);
         SetAllAttacksActive(false);
     }
 
     private void OnDestroy()
     {
-        health.OnDie -= HandleDeath;
+        Health.OnDie -= HandleDeath;
     }
 
     private void Update()
