@@ -36,7 +36,7 @@ public class EnemyAnimator : MonoBehaviour
 
     private void HandleAttack(Dictionary<string, AttackComponent> attacks)
     {
-        animator.SetTrigger(attacks.Keys.ToList()[0]);
+        animator.SetTrigger(attacks.Keys.ToList()[Random.Range(0,attacks.Count)]);
     }
 
     private void HandleGetHit()

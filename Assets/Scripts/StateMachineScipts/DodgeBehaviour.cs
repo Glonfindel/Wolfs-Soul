@@ -11,7 +11,7 @@ public class DodgeBehaviour : StateMachineBehaviour
         CharacterController character = animator.GetComponentInParent<CharacterController>();
         if (character)
         {
-            character.Rigidbody.AddForce((character.transform.forward * -1 + Vector3.up) * character.Data.jumpPower,
+            character.Rigidbody.AddForce((character.transform.forward * -1 + Vector3.up*0.5f) * character.Data.jumpPower,
                 ForceMode.Impulse);
         }
     }
