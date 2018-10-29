@@ -12,6 +12,7 @@ public class EnemyController : Controller
     public NavMeshAgent ai { get; private set; }
     public event Action<Dictionary<string, AttackComponent>> OnMeleeAttack = delegate { };
     private float lastAttackTime;
+    [NonSerialized] public float distance;
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class EnemyController : Controller
 
     void Update()
     {
-        float distance = Vector3.Distance(target.position, transform.position);
+        distance = Vector3.Distance(target.position, transform.position);
 
         if (distance <= lookRadius && ai.enabled)
         {
