@@ -6,14 +6,19 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-
-    public CharacterData Data;
+    protected IStateMachine stateMachine;
+    public StateMachineAsset Data;
     public Dictionary<string, AttackComponent> Attacks = new Dictionary<string, AttackComponent>();
     
     protected virtual void Awake()
     {
         Attacks = GetComponentsInChildren<AttackComponent>().ToDictionary(e => e.name);
         SetAllAttacksActive(false);
+    }
+
+    protected virtual void Update()
+    {
+        stateMachine.Update(Time.deltaTime);
     }
 
     public void SetAllAttacksActive(bool active = true)

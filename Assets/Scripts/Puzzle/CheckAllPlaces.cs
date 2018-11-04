@@ -1,25 +1,41 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class CheckAllPlaces : MonoBehaviour {
+public class CheckAllPlaces : MonoBehaviour, ITrigger
+{
 
     public event Action OnComplete = delegate { };
-    public GameObject puzzleParent;
-    private ObjectFinalSpot[] objectFinalSpots;
+    private List<ITrigger> objectFinalSpots;
 
-	// Use this for initialization
-	void Start () {
-        objectFinalSpots = puzzleParent.GetComponentsInChildren<ObjectFinalSpot>();
-	}
-	
-	// Update is called once per frame
-	public void CheckAll () {
-		foreach(ObjectFinalSpot objFS in objectFinalSpots)
+    public ITrigger Parent { get; set; }
+
+    void Start()
+    {
+        objectFinalSpots = new List<ITrigger>(GetComponentsInChildren<ITrigger>().Where(e => e.Parent == null && e != this));
+        foreach (var spot in objectFinalSpots)
         {
-            if (!objFS.isFull) return;
+            spot.Parent = this;
         }
-        OnComplete();
-	}
+    }
+
+    public void OnTrigger(GameObject go)
+    {
+        objectFinalSpots.Remove(go.GetComponent<ITrigger>());
+        if (objectFinalSpots.Count == 0)
+        {
+            OnComplete();
+            if (Parent != null)
+            {
+                Parent.OnTrigger(gameObject);
+            }
+        }
+    }
+
+    public bool Check(GameObject go)
+    {
+        return objectFinalSpots.Contains(go.GetComponent<ITrigger>());
+    }
 }

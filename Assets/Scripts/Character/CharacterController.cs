@@ -17,6 +17,7 @@ public class CharacterController : Controller
         Input = GetComponent<CharacterInput>();
         Health = GetComponent<Health>();
         Health.OnDie += HandleDeath;
+        stateMachine = Data.Create(gameObject);
     }
 
     private void OnDestroy()
@@ -24,8 +25,9 @@ public class CharacterController : Controller
         Health.OnDie -= HandleDeath;
     }
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
         IsGrounded = Physics.Raycast(transform.position, Vector3.down, 0.05f);
     }
 

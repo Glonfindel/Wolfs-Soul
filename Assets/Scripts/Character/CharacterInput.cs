@@ -12,24 +12,16 @@ public class CharacterInput : MonoBehaviour {
     public bool RangeAttack { get; private set; }
     public event Action OnRangeAttack = delegate { };
     public bool Transformation { get; private set; }
-    public event Action OnTransformation = delegate { };
 
     private void Update()
     {
-        Horizontal = Input.GetAxis("Horizontal");
-        Vertical = Input.GetAxis("Vertical");
+        Horizontal = Input.GetAxisRaw("Horizontal");
+        Vertical = Input.GetAxisRaw("Vertical");
         Jump = Input.GetButtonDown("Jump");
         Dodge = Input.GetButtonDown("Dodge");
         MeleeAttack = Input.GetButtonDown("MeleeAttack");
         RangeAttack = Input.GetButtonDown("RangeAttack");
         Transformation = Input.GetButtonDown("Transformation");
-
-        if (MeleeAttack)
-            OnMeleeAttack();
-        if (RangeAttack)
-            OnRangeAttack();
-        if (Transformation)
-            OnTransformation();
     }
 
 }
