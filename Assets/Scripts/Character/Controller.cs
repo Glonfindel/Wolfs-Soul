@@ -6,19 +6,25 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    protected IStateMachine stateMachine;
     public StateMachineAsset Data;
     public Dictionary<string, AttackComponent> Attacks = new Dictionary<string, AttackComponent>();
-    
+    private IStateMachine stateMachine;
+    public Health Health { get; private set; }
+    public bool IsGrounded { get; private set; }
+
     protected virtual void Awake()
     {
         Attacks = GetComponentsInChildren<AttackComponent>().ToDictionary(e => e.name);
         SetAllAttacksActive(false);
+        Health = GetComponent<Health>();
+        if (Data)
+            stateMachine = Data.Create(gameObject);
     }
 
     protected virtual void Update()
     {
         stateMachine.Update(Time.deltaTime);
+        IsGrounded = Physics.Raycast(transform.position, Vector3.down, 0.05f);
     }
 
     public void SetAllAttacksActive(bool active = true)

@@ -8,9 +8,7 @@ public class CharacterInput : MonoBehaviour {
     public bool Jump { get; private set; }
     public bool Dodge { get; private set; }
     public bool MeleeAttack { get; private set; }
-    public event Action OnMeleeAttack = delegate { };
     public bool RangeAttack { get; private set; }
-    public event Action OnRangeAttack = delegate { };
     public bool Transformation { get; private set; }
 
     private void Update()

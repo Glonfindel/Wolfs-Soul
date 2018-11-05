@@ -35,12 +35,20 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         transition = new Transition("Jump");
         state.AddTransition(transition);
-        transition.AddCondition(new JumpButtonCondition());
+        transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
 
         transition = new Transition("MeleeAttack");
         state.AddTransition(transition);
-        transition.AddCondition(new MeleeAttackButtonCondition());
+        transition.AddCondition(new ButtonCondition("MeleeAttack"));
+
+        transition = new Transition("RangeAttack");
+        state.AddTransition(transition);
+        transition.AddCondition(new ButtonCondition("RangeAttack"));
+
+        transition = new Transition("Transformation");
+        state.AddTransition(transition);
+        transition.AddCondition(new ButtonCondition("Transformation"));
 
         #endregion
 
@@ -58,7 +66,7 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         transition = new Transition("Jump");
         state.AddTransition(transition);
-        transition.AddCondition(new JumpButtonCondition());
+        transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
 
         #endregion
@@ -77,7 +85,7 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         transition = new Transition("Jump");
         state.AddTransition(transition);
-        transition.AddCondition(new JumpButtonCondition());
+        transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
 
         #endregion
@@ -103,7 +111,7 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         transition = new Transition("Jump");
         state.AddTransition(transition);
-        transition.AddCondition(new JumpButtonCondition());
+        transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
 
         #endregion
@@ -129,7 +137,7 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         transition = new Transition("Jump");
         state.AddTransition(transition);
-        transition.AddCondition(new JumpButtonCondition());
+        transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
 
         #endregion
@@ -147,6 +155,19 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         #endregion
 
+        #region DodgeState
+
+        state = new State("Dodge");
+        stateMachine.AddState(state);
+        state.AddBehaviour(new JumpBehaviour(-10));
+        state.AddBehaviour(new PlayAnimationBehaviour("Dodge"));
+
+        transition = new Transition("Idle");
+        state.AddTransition(transition);
+        transition.AddCondition(new AnimationFinishedCondition());
+
+        #endregion
+
         #region MeleeAttackState
 
         state = new State("MeleeAttack");
@@ -157,6 +178,51 @@ public class WolfStateMachineAsset : StateMachineAsset
         transition = new Transition("Idle");
         state.AddTransition(transition);
         transition.AddCondition(new AnimationFinishedCondition());
+
+        #endregion
+
+        #region RangeAttackState
+
+        state = new State("RangeAttack");
+        stateMachine.AddState(state);
+        state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("RangeAttack")));
+        state.AddBehaviour(new PlayAnimationBehaviour("RangeAttack"));
+
+        transition = new Transition("Idle");
+        state.AddTransition(transition);
+        transition.AddCondition(new AnimationFinishedCondition());
+
+        #endregion
+
+        #region TransformationState
+
+        state = new State("Transformation");
+        stateMachine.AddState(state);
+        state.AddBehaviour(new PlayAnimationBehaviour("Transformation"));
+
+        transition = new Transition("Idle");
+        state.AddTransition(transition);
+        transition.AddCondition(new AnimationFinishedCondition());
+
+        #endregion
+
+        #region GetHitState
+
+        state = new State("GetHit");
+        stateMachine.AddState(state);
+        state.AddBehaviour(new PlayAnimationBehaviour("GetHit"));
+
+        transition = new Transition("Idle");
+        state.AddTransition(transition);
+        transition.AddCondition(new AnimationFinishedCondition());
+
+        #endregion
+
+        #region DeathState
+
+        state = new State("Death");
+        stateMachine.AddState(state);
+        state.AddBehaviour(new PlayAnimationBehaviour("Death"));
 
         #endregion
 
