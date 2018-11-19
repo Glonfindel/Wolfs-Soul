@@ -60,15 +60,15 @@ public class WolfStateMachineAsset : StateMachineAsset
         state.AddBehaviour(new RotateBehaviour(75f));
         state.AddBehaviour(new PlayAnimationBehaviour("Run"));
 
-        transition = new Transition("Idle");
-        state.AddTransition(transition);
-        transition.AddCondition(new VerticalAxisCondition(e => e == 0));
-
         transition = new Transition("Jump");
         state.AddTransition(transition);
         transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
 
+        transition = new Transition("Idle");
+        state.AddTransition(transition);
+        transition.AddCondition(new VerticalAxisCondition(e => e == 0));
+        
         #endregion
 
         #region WalkBackwardState
@@ -79,14 +79,14 @@ public class WolfStateMachineAsset : StateMachineAsset
         state.AddBehaviour(new RotateBehaviour(75f));
         state.AddBehaviour(new PlayAnimationBehaviour("Walk"));
 
-        transition = new Transition("Idle");
-        state.AddTransition(transition);
-        transition.AddCondition(new VerticalAxisCondition(e => e == 0));
-
         transition = new Transition("Jump");
         state.AddTransition(transition);
         transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
+
+        transition = new Transition("Idle");
+        state.AddTransition(transition);
+        transition.AddCondition(new VerticalAxisCondition(e => e == 0));
 
         #endregion
 
