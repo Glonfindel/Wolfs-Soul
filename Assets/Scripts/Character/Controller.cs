@@ -19,6 +19,12 @@ public class Controller : MonoBehaviour
         Health = GetComponent<Health>();
         if (Data)
             stateMachine = Data.Create(gameObject);
+        Health.OnDamageTaken += GetHit;
+    }
+
+    private void OnDestroy()
+    {
+        Health.OnDamageTaken -= GetHit;
     }
 
     protected virtual void Update()
@@ -38,5 +44,10 @@ public class Controller : MonoBehaviour
     public void SetAttackActive(string name, bool active = true)
     {
         Attacks[name].gameObject.SetActive(active);
+    }
+
+    private void GetHit()
+    {
+        stateMachine.ChangeState("GetHit");
     }
 }

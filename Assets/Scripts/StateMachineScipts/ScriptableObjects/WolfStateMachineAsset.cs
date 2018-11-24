@@ -15,7 +15,7 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         state = new State("Idle");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationBehaviour("Idle"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Idle", 0.1f));
 
         transition = new Transition("WalkForward");
         state.AddTransition(transition);
@@ -58,7 +58,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         stateMachine.AddState(state);
         state.AddBehaviour(new MoveBehaviour(5f));
         state.AddBehaviour(new RotateBehaviour(75f));
-        state.AddBehaviour(new PlayAnimationBehaviour("Run"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Run", 0.1f));
 
         transition = new Transition("Jump");
         state.AddTransition(transition);
@@ -77,7 +77,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         stateMachine.AddState(state);
         state.AddBehaviour(new MoveBehaviour(-3f));
         state.AddBehaviour(new RotateBehaviour(75f));
-        state.AddBehaviour(new PlayAnimationBehaviour("Walk"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Walk", 0.1f));
 
         transition = new Transition("Jump");
         state.AddTransition(transition);
@@ -95,7 +95,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         state = new State("RotateRight");
         stateMachine.AddState(state);
         state.AddBehaviour(new RotateBehaviour(100f));
-        state.AddBehaviour(new PlayAnimationBehaviour("Rotate Right"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Rotate Right", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -121,7 +121,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         state = new State("RotateLeft");
         stateMachine.AddState(state);
         state.AddBehaviour(new RotateBehaviour(100f));
-        state.AddBehaviour(new PlayAnimationBehaviour("Rotate Left"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Rotate Left", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -147,7 +147,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         state = new State("Jump");
         stateMachine.AddState(state);
         state.AddBehaviour(new JumpBehaviour(10));
-        state.AddBehaviour(new PlayAnimationBehaviour("Jump"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Jump", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -160,7 +160,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         state = new State("Dodge");
         stateMachine.AddState(state);
         state.AddBehaviour(new JumpBehaviour(-10));
-        state.AddBehaviour(new PlayAnimationBehaviour("Dodge"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Dodge", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -173,7 +173,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         state = new State("MeleeAttack");
         stateMachine.AddState(state);
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("MeleeAttack")));
-        state.AddBehaviour(new PlayAnimationBehaviour("MeleeAttack"));
+        state.AddBehaviour(new PlayAnimationBehaviour("MeleeAttack", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -186,7 +186,7 @@ public class WolfStateMachineAsset : StateMachineAsset
         state = new State("RangeAttack");
         stateMachine.AddState(state);
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("RangeAttack")));
-        state.AddBehaviour(new PlayAnimationBehaviour("RangeAttack"));
+        state.AddBehaviour(new PlayAnimationBehaviour("RangeAttack", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -198,7 +198,7 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         state = new State("Transformation");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationBehaviour("Transformation"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -210,7 +210,12 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         state = new State("GetHit");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationBehaviour("GetHit"));
+        state.AddBehaviour(new PlayAnimationBehaviour("GetHit", 0f));
+
+        transition = new Transition("Death");
+        state.AddTransition(transition);
+        transition.AddCondition(new AnimationFinishedCondition());
+        transition.AddCondition(new IsDeadCondition());
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
@@ -222,7 +227,7 @@ public class WolfStateMachineAsset : StateMachineAsset
 
         state = new State("Death");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationBehaviour("Death"));
+        state.AddBehaviour(new PlayAnimationBehaviour("Death", 0.1f));
 
         #endregion
 

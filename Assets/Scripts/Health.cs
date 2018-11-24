@@ -22,10 +22,7 @@ public class Health : MonoBehaviour, IDamageable
         if (health <= 0) return;
 
         health -= damage;
-        if (health <= 0)
-            OnDie();
-        else
-            OnDamageTaken();
+        OnDamageTaken();
     }
 
 }
