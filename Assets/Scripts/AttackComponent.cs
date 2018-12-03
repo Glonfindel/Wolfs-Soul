@@ -8,13 +8,6 @@ public class AttackComponent : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
-        try
-        {
-            other.GetComponent<IDamageable>().TakeDamage(damage);
-        }
-        catch
-        {
-            Debug.Log("Target is not an enemy.");
-        }
+        other.GetComponent<IDamageable>().TakeDamage(damage);
     }
 }

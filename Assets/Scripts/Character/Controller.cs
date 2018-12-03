@@ -48,6 +48,7 @@ public class Controller : MonoBehaviour
 
     private void GetHit()
     {
-        stateMachine.ChangeState("GetHit");
+        if (Data)
+            stateMachine.ChangeState("GetHit");
     }
 }

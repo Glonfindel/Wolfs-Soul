@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 77090578}
   - component: {fileID: 77090580}
   - component: {fileID: 77090579}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Attack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 344032369}
   - component: {fileID: 344032371}
   - component: {fileID: 344032370}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Attack3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2016,6 +2016,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1711435684680120, guid: 8c50de17f03d0734dae8434040035e37, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241687554980316, guid: 8c50de17f03d0734dae8434040035e37, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c50de17f03d0734dae8434040035e37, type: 2}
   m_IsPrefabAsset: 0
@@ -3063,7 +3071,7 @@ GameObject:
   - component: {fileID: 1672410826}
   - component: {fileID: 1672410828}
   - component: {fileID: 1672410827}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Attack2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
