@@ -199,6 +199,8 @@ public class WolfStateMachineAsset : StateMachineAsset
         state = new State("Transformation");
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
+        state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
+        state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
