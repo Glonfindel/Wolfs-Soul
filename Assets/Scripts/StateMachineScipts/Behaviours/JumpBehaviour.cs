@@ -13,7 +13,7 @@ public class JumpBehaviour : IBehaviour
 
     public void Enter()
     {
-        Machine.User.GetComponent<Rigidbody>().AddForce(Machine.User.transform.forward * power + Vector3.up * power / 2, ForceMode.Impulse);
+        Machine.User.GetComponent<Rigidbody>().AddForce(Machine.User.transform.forward * power + Vector3.up * power, ForceMode.Impulse);
     }
 
     public void Exit()

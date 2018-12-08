@@ -10,7 +10,6 @@ public class Controller : MonoBehaviour
     public Dictionary<string, AttackComponent> Attacks = new Dictionary<string, AttackComponent>();
     protected IStateMachine stateMachine;
     public Health Health { get; private set; }
-    public bool IsGrounded { get; private set; }
 
     protected virtual void Awake()
     {
@@ -30,7 +29,6 @@ public class Controller : MonoBehaviour
     protected virtual void Update()
     {
         stateMachine.Update(Time.deltaTime);
-        IsGrounded = Physics.Raycast(transform.position, Vector3.down, 0.05f);
     }
 
     public void SetAllAttacksActive(bool active = true)

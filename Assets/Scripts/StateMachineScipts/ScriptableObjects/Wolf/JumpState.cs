@@ -11,7 +11,7 @@ public partial class WolfStateMachineAsset
 
         state = new State("Jump");
         stateMachine.AddState(state);
-        state.AddBehaviour(new JumpBehaviour(10));
+        state.AddBehaviour(new JumpBehaviour(5));
         state.AddBehaviour(new PlayAnimationBehaviour("Jump", 0.1f));
 
         transition = new Transition("Idle");
