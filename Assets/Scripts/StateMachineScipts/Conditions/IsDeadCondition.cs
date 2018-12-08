@@ -7,6 +7,6 @@ public class IsDeadCondition : Condition
 {
     public override bool Check(GameObject target)
     {
-        return target.GetComponent<Health>().HealthAsPercentage == 0;
+        return target.GetComponent<Health>().HealthAsPercentage <= 0;
     }
 }

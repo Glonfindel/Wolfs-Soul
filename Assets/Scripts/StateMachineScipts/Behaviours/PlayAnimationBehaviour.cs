@@ -16,6 +16,7 @@ public class PlayAnimationBehaviour : IBehaviour
     public void Enter()
     {
         Machine.User.GetComponentInChildren<Animator>().CrossFadeInFixedTime(name, time);
+        Machine.User.GetComponentInChildren<Animator>().Update(0);
     }
 
     public void Exit()
