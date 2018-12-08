@@ -30,5 +30,13 @@ public partial class WolfStateMachineAsset
         state.AddTransition(transition);
         transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
+
+        transition = new Transition("MeleeAttack");
+        state.AddTransition(transition);
+        transition.AddCondition(new ButtonCondition("MeleeAttack"));
+
+        transition = new Transition("RangeAttack");
+        state.AddTransition(transition);
+        transition.AddCondition(new ButtonCondition("RangeAttack"));
     }
 }

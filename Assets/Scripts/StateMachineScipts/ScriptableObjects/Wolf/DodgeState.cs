@@ -11,7 +11,7 @@ public partial class WolfStateMachineAsset
 
         state = new State("Dodge");
         stateMachine.AddState(state);
-        state.AddBehaviour(new JumpBehaviour(-10));
+        state.AddBehaviour(new DodgeBehaviour(-10));
         state.AddBehaviour(new PlayAnimationBehaviour("Dodge", 0.1f));
 
         transition = new Transition("Idle");
