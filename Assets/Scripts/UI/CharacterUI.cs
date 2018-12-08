@@ -14,7 +14,8 @@ public class CharacterUI : MonoBehaviour {
         player = FindObjectOfType<CharacterController>();
         player.Health.OnDamageTaken += UpdateHP;
 	    player.Energy.OnValueChange += UpdateMP;
-    }
+	    player.Energy.OnFullValue += Highlight;
+	}
 	
 	void UpdateHP () {
         health.fillAmount = player.Health.HealthAsPercentage;
@@ -22,7 +23,11 @@ public class CharacterUI : MonoBehaviour {
 
     void UpdateMP()
     {
-        spiritEnergy.fillAmount = player.Energy.EnergyAsPercentage;
-        highlight.SetActive(spiritEnergy.fillAmount == 0.82f);
+        spiritEnergy.fillAmount = player.Energy.EnergyAsPercentage * 0.82f;
+    }
+
+    void Highlight()
+    {
+        highlight.SetActive(!highlight.activeSelf);
     }
 }

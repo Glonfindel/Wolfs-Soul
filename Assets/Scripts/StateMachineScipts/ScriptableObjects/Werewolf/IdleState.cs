@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class WolfStateMachineAsset
+public partial class WerewolfStateMachineAsset
 {
     private void CreateIdle(StateMachine stateMachine)
     {
@@ -12,6 +12,7 @@ public partial class WolfStateMachineAsset
         state = new State("Idle");
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("Idle", 0.1f));
+        state.AddBehaviour(new DrainEnergyBehaviour(3));
 
         transition = new Transition("WalkForward");
         state.AddTransition(transition);
@@ -44,7 +45,6 @@ public partial class WolfStateMachineAsset
 
         transition = new Transition("Transformation");
         state.AddTransition(transition);
-        transition.AddCondition(new ButtonCondition("Transformation"));
-        transition.AddCondition(new IsEnergyFullCondition());
+        transition.AddCondition(new IsEnergyZeroCondition());
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyAfterPlaying : MonoBehaviour
+public class DestroyAfterPlayingSound : MonoBehaviour
 {
     void Start()
     {

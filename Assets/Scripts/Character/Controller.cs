@@ -8,7 +8,7 @@ public class Controller : MonoBehaviour
 {
     public StateMachineAsset Data;
     public Dictionary<string, AttackComponent> Attacks = new Dictionary<string, AttackComponent>();
-    private IStateMachine stateMachine;
+    protected IStateMachine stateMachine;
     public Health Health { get; private set; }
     public bool IsGrounded { get; private set; }
 

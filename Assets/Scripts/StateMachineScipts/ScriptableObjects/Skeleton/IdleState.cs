@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class WolfStateMachineAsset
+public partial class SkeletonStateMachineAsset
 {
     private void CreateIdle(StateMachine stateMachine)
     {
@@ -45,6 +45,5 @@ public partial class WolfStateMachineAsset
         transition = new Transition("Transformation");
         state.AddTransition(transition);
         transition.AddCondition(new ButtonCondition("Transformation"));
-        transition.AddCondition(new IsEnergyFullCondition());
     }
 }

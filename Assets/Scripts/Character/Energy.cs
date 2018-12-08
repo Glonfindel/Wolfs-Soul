@@ -15,7 +15,7 @@ public class Energy : MonoBehaviour {
         {
             energy = Mathf.Clamp(value, 0, maxEnergy);
             OnValueChange();
-            if (energy == maxEnergy)
+            if (energy >= maxEnergy || energy <= 0)
             {
                 OnFullValue();
             }
@@ -25,5 +25,5 @@ public class Energy : MonoBehaviour {
     private float energy;
     public event Action OnValueChange = delegate { };
     public event Action OnFullValue = delegate { };
-    public float EnergyAsPercentage { get { return energy / maxEnergy * 0.82f; } }
+    public float EnergyAsPercentage { get { return energy / maxEnergy; } }
 }

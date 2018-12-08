@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class WolfStateMachineAsset
+public partial class SkeletonStateMachineAsset
 {
-    private void CreateTransformation(StateMachine stateMachine)
+    private void CreateRangeAttack(StateMachine stateMachine)
     {
         State state;
         Transition transition;
 
-        state = new State("Transformation");
+        state = new State("RangeAttack");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
-        state.AddBehaviour(new TransformationBehaviour(true));
+        state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("RangeAttack")));
+        state.AddBehaviour(new PlayAnimationBehaviour("RangeAttack", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);

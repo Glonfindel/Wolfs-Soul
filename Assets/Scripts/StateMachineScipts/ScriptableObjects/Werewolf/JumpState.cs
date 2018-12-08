@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class WolfStateMachineAsset
+public partial class WerewolfStateMachineAsset
 {
-    private void CreateTransformation(StateMachine stateMachine)
+    private void CreateJump(StateMachine stateMachine)
     {
         State state;
         Transition transition;
 
-        state = new State("Transformation");
+        state = new State("Jump");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
-        state.AddBehaviour(new TransformationBehaviour(true));
+        state.AddBehaviour(new JumpBehaviour(10));
+        state.AddBehaviour(new PlayAnimationBehaviour("Jump", 0.1f));
+        state.AddBehaviour(new DrainEnergyBehaviour(3));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);

@@ -12,9 +12,9 @@ public class EnergyAttackComponent : AttackComponent
         energy = GetComponentInParent<Energy>();
     }
 
-    protected override void OnTriggerEnter(Collider other)
+    protected override void Damage(IDamageable damageable)
     {
-        base.OnTriggerEnter(other);
+        base.Damage(damageable);
         energy.CurrentEnergy += addEnergy;
     }
 }
