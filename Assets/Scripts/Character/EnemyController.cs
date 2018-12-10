@@ -5,19 +5,28 @@ using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
-public class EnemyController : Controller
+public class EnemyController : Controller, ITrigger
 {
     public float lookRadius = 10f;
     private Transform target;
     public NavMeshAgent ai { get; private set; }
+    public GameObject GameObject
+    {
+        get { return gameObject; }
+    }
+    public ITrigger Parent { get; set; }
+
     public event Action<Dictionary<string, AttackComponent>> OnMeleeAttack = delegate { };
     private float lastAttackTime;
     [NonSerialized] public float distance;
+
+    
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         ai = GetComponent<NavMeshAgent>();
+        Health.OnDie += A;
     }
 
     void Update()
@@ -53,4 +62,22 @@ public class EnemyController : Controller
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
+    void A()
+    {
+        if(Parent!=null)
+        Parent.OnTrigger(gameObject);
+    }
+
+    public bool Check(GameObject go)
+    {
+        return Health.HealthAsPercentage <= 0;
+    }
+
+    public void OnTrigger(GameObject go)
+    {
+        if (Parent != null && Parent.Check(gameObject))
+        {
+            Parent.OnTrigger(gameObject);
+        }
+    }
 }

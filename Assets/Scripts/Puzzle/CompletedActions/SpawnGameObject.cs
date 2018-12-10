@@ -1,23 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
-public class SpawnGameObject : MonoBehaviour {
+public class SpawnGameObject : MonoBehaviour
+{
 
     public GameObject prefab;
-    private CheckAllPlaces checkAllPlaces;
+    private CheckAllObjectives checkAllObjectives;
+    private GameObject go;
 
-	void Start () {
-        checkAllPlaces = GetComponent<CheckAllPlaces>();
-        checkAllPlaces.OnComplete += Spawn;
-	}
+    void Start()
+    {
+        checkAllObjectives = GetComponent<CheckAllObjectives>();
+        checkAllObjectives.OnComplete += Spawn;
+        go = Instantiate(prefab, transform.position + prefab.transform.position, prefab.transform.rotation);
+        if (go.GetComponent<ITrigger>() != null && transform.parent.GetComponent<CheckAllObjectives>())
+        {
+            transform.parent.GetComponent<CheckAllObjectives>().AddObjective(go.GetComponent<ITrigger>());
+        }
+        go.SetActive(false);
+    }
 
     private void OnDestroy()
     {
-        checkAllPlaces.OnComplete -= Spawn;
+        checkAllObjectives.OnComplete -= Spawn;
     }
-    
-    private void Spawn () {
-        Instantiate(prefab, transform.position+prefab.transform.position, prefab.transform.rotation);
-	}
+
+    private void Spawn()
+    {
+        go.SetActive(true);
+    }
 }

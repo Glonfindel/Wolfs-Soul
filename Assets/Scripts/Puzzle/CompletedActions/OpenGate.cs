@@ -6,17 +6,17 @@ public class OpenGate : MonoBehaviour
 {
 
     public GameObject gate;
-    private CheckAllPlaces checkAllPlaces;
+    private CheckAllObjectives checkAllObjectives;
 
     void Start()
     {
-        checkAllPlaces = GetComponent<CheckAllPlaces>();
-        checkAllPlaces.OnComplete += Open;
+        checkAllObjectives = GetComponent<CheckAllObjectives>();
+        checkAllObjectives.OnComplete += Open;
     }
 
     private void OnDestroy()
     {
-        checkAllPlaces.OnComplete -= Open;
+        checkAllObjectives.OnComplete -= Open;
     }
 
     private void Open()

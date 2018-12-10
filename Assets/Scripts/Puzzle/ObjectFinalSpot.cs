@@ -8,7 +8,10 @@ public class ObjectFinalSpot : MonoBehaviour, ITrigger
     public MovingObject fitsHere; //Gameobject ktory ma tu byc docelowo
     [NonSerialized] public bool isFull;
     private AudioSource soundOnTrigger;
-
+    public GameObject GameObject
+    {
+        get { return gameObject; }
+    }
     public ITrigger Parent { get; set; }
 
     private void Start()
