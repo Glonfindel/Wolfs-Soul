@@ -15,7 +15,8 @@ public class CharacterUI : MonoBehaviour {
         player.Health.OnDamageTaken += UpdateHP;
 	    player.Energy.OnValueChange += UpdateMP;
 	    player.Energy.OnFullValue += Highlight;
-	}
+	    player.Energy.OnZeroValue += DisableHighlight;
+    }
 	
 	void UpdateHP () {
         health.fillAmount = player.Health.HealthAsPercentage;
@@ -28,6 +29,11 @@ public class CharacterUI : MonoBehaviour {
 
     void Highlight()
     {
-        highlight.SetActive(!highlight.activeSelf);
+        highlight.SetActive(true);
+    }
+
+    void DisableHighlight()
+    {
+        highlight.SetActive(false);
     }
 }
