@@ -26,11 +26,6 @@ public class CheckAllObjectives : MonoBehaviour, ITrigger
         }
     }
 
-    private void Update()
-    {
-        Debug.Log(name + " " + objectives.Count);
-    }
-
     public void OnTrigger(GameObject go)
     {
         objectives.Remove(go.GetComponent<ITrigger>());
