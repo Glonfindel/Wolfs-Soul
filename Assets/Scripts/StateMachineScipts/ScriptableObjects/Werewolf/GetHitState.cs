@@ -11,12 +11,11 @@ public partial class WerewolfStateMachineAsset
 
         state = new State("GetHit");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationBehaviour("GetHit", 0f));
+        state.AddBehaviour(new PlayAnimationChanceBehaviour(new PlayAnimationBehaviour("GetHit", 0f)));
         state.AddBehaviour(new DrainEnergyBehaviour(3));
 
         transition = new Transition("Death");
         state.AddTransition(transition);
-        transition.AddCondition(new AnimationFinishedCondition());
         transition.AddCondition(new IsDeadCondition());
 
         transition = new Transition("Idle");

@@ -30,5 +30,9 @@ public class ExecuteAttackOnAnimCurveBehaviour : IBehaviour
         {
             behaviour.Update(time);
         }
+        else
+        {
+            Machine.User.GetComponent<Controller>().SetAllAttacksActive(false);
+        }
     }
 }

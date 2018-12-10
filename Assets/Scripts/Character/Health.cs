@@ -6,7 +6,7 @@ using UnityEngine;
 public class Health : MonoBehaviour, IDamageable
 {
 
-    private float maxHealth = 100;
+    public float maxHealth = 100;
     private float health;
     public event Action OnDie = delegate { };
     public event Action OnDamageTaken = delegate { };
