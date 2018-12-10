@@ -955,11 +955,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4337244539458298}
   - component: {fileID: 54015871709493114}
-  - component: {fileID: 65545315733012524}
   - component: {fileID: 114132060850023844}
   - component: {fileID: 114527255531765134}
   - component: {fileID: 114080082744933710}
   - component: {fileID: 114802540087017734}
+  - component: {fileID: 65846883743212778}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -1968,7 +1968,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1600370488633420}
   m_LocalRotation: {x: -0, y: -0.5636676, z: -0, w: 0.82600176}
-  m_LocalPosition: {x: 41.95, y: 0.1, z: 45.38}
+  m_LocalPosition: {x: 24.9, y: 0.1, z: 4.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4213509937395618}
@@ -2893,7 +2893,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &65545315733012524
+--- !u!65 &65846883743212778
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3013,6 +3013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1978d59036208e64a9876d57efc10282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!114 &114583787907439404
 MonoBehaviour:
   m_ObjectHideFlags: 1

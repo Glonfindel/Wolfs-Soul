@@ -13,6 +13,7 @@ public partial class WolfStateMachineAsset
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
         state.AddBehaviour(new TransformationBehaviour(true));
+        state.AddBehaviour(new SpawnEffectOnExitBehaviour(Resources.Load<GameObject>("TransformationEffect")));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
