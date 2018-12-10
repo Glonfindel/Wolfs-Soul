@@ -6,24 +6,24 @@ ModelImporter:
     100000: //RootNode
     100002: pillar_LP018
     100004: stoneFloor1_LP096
-    100006: stoneFloor1_LP1104
+    100006: stoneFloor1_LP1105
     400000: //RootNode
     400002: pillar_LP018
     400004: stoneFloor1_LP096
-    400006: stoneFloor1_LP1104
+    400006: stoneFloor1_LP1105
     2100000: sufit
     2100002: podporka
     2100004: stonePillar1
     2100006: stoneWall1
     2300000: pillar_LP018
     2300002: stoneFloor1_LP096
-    2300004: stoneFloor1_LP1104
+    2300004: stoneFloor1_LP1105
     3300000: pillar_LP018
     3300002: stoneFloor1_LP096
-    3300004: stoneFloor1_LP1104
+    3300004: stoneFloor1_LP1105
     4300000: stoneFloor1_LP096
     4300002: pillar_LP018
-    4300004: stoneFloor1_LP1104
+    4300004: stoneFloor1_LP1105
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
