@@ -48,6 +48,8 @@ public class EnemyAnimator : MonoBehaviour
     private void HandleDeath()
     {
         enemyController.ai.enabled = false;
+
+        enemyController.GetComponent<BoxCollider>().enabled = false;
         enemyController.GetComponentInChildren<FaceCamera>().gameObject.SetActive(false);
         animator.Play("Death");
     }
