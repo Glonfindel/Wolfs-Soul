@@ -23,6 +23,6 @@ public class AttackBehaviour : IBehaviour
 
     public void Update(float time)
     {
-        Machine.User.GetComponent<Controller>().SetAttackActive(name);
+        Machine.User.GetComponent<Controller>().SetAttackActive(name, Machine.User.GetComponentInChildren<Animator>().GetFloat("AttackEnabled") > 0.5f);
     }
 }
