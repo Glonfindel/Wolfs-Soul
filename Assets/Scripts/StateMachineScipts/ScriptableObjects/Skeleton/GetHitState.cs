@@ -15,7 +15,6 @@ public partial class SkeletonStateMachineAsset
 
         transition = new Transition("Death");
         state.AddTransition(transition);
-        transition.AddCondition(new AnimationFinishedCondition());
         transition.AddCondition(new IsDeadCondition());
 
         transition = new Transition("Idle");

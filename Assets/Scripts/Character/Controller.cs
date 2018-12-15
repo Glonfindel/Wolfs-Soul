@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Controller : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class Controller : MonoBehaviour
 
     private void GetHit()
     {
-        stateMachine.ChangeState("GetHit");
+        if (Random.Range(0, 100) < 50 || Health.HealthAsPercentage <= 0)
+            stateMachine.ChangeState("GetHit");
     }
 }

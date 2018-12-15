@@ -11,7 +11,7 @@ public partial class WolfStateMachineAsset
 
         state = new State("GetHit");
         stateMachine.AddState(state);
-        state.AddBehaviour(new PlayAnimationChanceBehaviour(new PlayAnimationBehaviour("GetHit", 0f)));
+        state.AddBehaviour(new PlayAnimationBehaviour("GetHit", 0f));
 
         transition = new Transition("Death");
         state.AddTransition(transition);
