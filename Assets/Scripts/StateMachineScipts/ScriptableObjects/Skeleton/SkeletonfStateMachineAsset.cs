@@ -9,15 +9,13 @@ public partial class SkeletonStateMachineAsset : StateMachineAsset
     {
         StateMachine stateMachine = new StateMachine(user);
 
+        CreateInactive(stateMachine);
+        CreateActive(stateMachine);
         CreateIdle(stateMachine);
         CreateWalkForward(stateMachine);
-        CreateWalkBackward(stateMachine);
         CreateRotateRight(stateMachine);
         CreateRotateLeft(stateMachine);
-        CreateJump(stateMachine);
-        CreateDodge(stateMachine);
         CreateMeleeAttack(stateMachine);
-        CreateRangeAttack(stateMachine);
         CreateGetHit(stateMachine);
         CreateDeath(stateMachine);
 

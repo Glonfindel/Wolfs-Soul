@@ -11,5 +11,6 @@ public partial class SkeletonStateMachineAsset
         state = new State("Death");
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("Death", 0.1f));
+        state.AddBehaviour(new SetAIOnEnterBehaviour(false));
     }
 }

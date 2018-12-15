@@ -11,24 +11,22 @@ public partial class SkeletonStateMachineAsset
 
         state = new State("RotateLeft");
         stateMachine.AddState(state);
-        state.AddBehaviour(new RotateBehaviour(100f));
+        state.AddBehaviour(new RotateAIBehaviour(5f));
         state.AddBehaviour(new PlayAnimationBehaviour("Rotate Left", 0.1f));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
-        transition.AddCondition(new HorizontalAxisCondition(e => e == 0));
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
+
+        transition = new Transition("Idle");
+        state.AddTransition(transition);
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e > stateMachine.User.GetComponent<EnemyController>().lookRadius));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
 
         transition = new Transition("WalkForward");
         state.AddTransition(transition);
-        transition.AddCondition(new VerticalAxisCondition(e => e > 0));
-
-        transition = new Transition("WalkBackward");
-        state.AddTransition(transition);
-        transition.AddCondition(new VerticalAxisCondition(e => e < 0));
-
-        transition = new Transition("Jump");
-        state.AddTransition(transition);
-        transition.AddCondition(new ButtonCondition("Jump"));
-        transition.AddCondition(new IsGroundedCondition());
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().lookRadius));
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e > stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
     }
 }

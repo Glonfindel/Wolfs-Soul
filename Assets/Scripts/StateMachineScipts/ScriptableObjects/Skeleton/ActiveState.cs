@@ -4,15 +4,15 @@ using UnityEngine;
 
 public partial class SkeletonStateMachineAsset
 {
-    private void CreateJump(StateMachine stateMachine)
+    private void CreateActive(StateMachine stateMachine)
     {
         State state;
         Transition transition;
 
-        state = new State("Jump");
+        state = new State("Active");
         stateMachine.AddState(state);
-        state.AddBehaviour(new JumpBehaviour(10));
-        state.AddBehaviour(new PlayAnimationBehaviour("Jump", 0.1f));
+        state.AddBehaviour(new PlayAnimationBehaviour("Active", 0));
+        state.AddBehaviour(new SetAIOnExitBehaviour(true));
 
         transition = new Transition("Idle");
         state.AddTransition(transition);

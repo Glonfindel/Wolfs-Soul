@@ -7,53 +7,24 @@ using Random = UnityEngine.Random;
 
 public class EnemyController : Controller, ITrigger
 {
+    //TODO: zrobić zmysły :P
     public float lookRadius = 10f;
-    private Transform target;
-    public NavMeshAgent ai { get; private set; }
+    public NavMeshAgent AI { get; private set; }
+    public Canvas UI { get; private set; }
+    public BoxCollider Collider { get; private set; }
     public GameObject GameObject
     {
         get { return gameObject; }
     }
     public ITrigger Parent { get; set; }
 
-    public event Action<Dictionary<string, AttackComponent>> OnMeleeAttack = delegate { };
-    private float lastAttackTime;
-    [NonSerialized] public float distance;
-
-    
-
-    void Start()
+    protected override void Awake()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        ai = GetComponent<NavMeshAgent>();
-        Health.OnDie += A;
-    }
-
-    void Update()
-    {
-        distance = Vector3.Distance(target.position, transform.position);
-
-        if (distance <= lookRadius && ai.enabled)
-        {
-            ai.SetDestination(target.position);
-
-            if (distance <= ai.stoppingDistance)
-            {
-                FaceTarget();
-                if (lastAttackTime + 2 <= Time.time)
-                {
-                    lastAttackTime = Time.time;
-                    OnMeleeAttack(Attacks);
-                }
-            }
-        }
-    }
-
-    void FaceTarget()
-    {
-        Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        AI = GetComponent<NavMeshAgent>();
+        UI = GetComponentInChildren<Canvas>();
+        Collider = GetComponent<BoxCollider>();
+        base.Awake();
+        Health.OnDamageTaken += CheckHP;
     }
 
     private void OnDrawGizmosSelected()
@@ -62,10 +33,12 @@ public class EnemyController : Controller, ITrigger
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
-    void A()
+    void CheckHP()
     {
-        if(Parent!=null)
-        Parent.OnTrigger(gameObject);
+        if (Parent != null && Check(gameObject))
+        {
+            Parent.OnTrigger(gameObject);
+        }
     }
 
     public bool Check(GameObject go)

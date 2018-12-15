@@ -15,35 +15,21 @@ public partial class SkeletonStateMachineAsset
 
         transition = new Transition("WalkForward");
         state.AddTransition(transition);
-        transition.AddCondition(new VerticalAxisCondition(e => e > 0));
-
-        transition = new Transition("WalkBackward");
-        state.AddTransition(transition);
-        transition.AddCondition(new VerticalAxisCondition(e => e < 0));
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().lookRadius));
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e > stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
 
         transition = new Transition("RotateRight");
         state.AddTransition(transition);
-        transition.AddCondition(new HorizontalAxisCondition(e => e > 0));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e > 0.1f));
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().lookRadius));
 
         transition = new Transition("RotateLeft");
         state.AddTransition(transition);
-        transition.AddCondition(new HorizontalAxisCondition(e => e < 0));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < -0.1f));
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().lookRadius));
 
-        transition = new Transition("Jump");
+        /*transition = new Transition("MeleeAttack");
         state.AddTransition(transition);
-        transition.AddCondition(new ButtonCondition("Jump"));
-        transition.AddCondition(new IsGroundedCondition());
-
-        transition = new Transition("MeleeAttack");
-        state.AddTransition(transition);
-        transition.AddCondition(new ButtonCondition("MeleeAttack"));
-
-        transition = new Transition("RangeAttack");
-        state.AddTransition(transition);
-        transition.AddCondition(new ButtonCondition("RangeAttack"));
-
-        transition = new Transition("Transformation");
-        state.AddTransition(transition);
-        transition.AddCondition(new ButtonCondition("Transformation"));
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().ai.stoppingDistance));*/
     }
 }

@@ -16,8 +16,7 @@ public class Controller : MonoBehaviour
         Attacks = GetComponentsInChildren<AttackComponent>().ToDictionary(e => e.name);
         SetAllAttacksActive(false);
         Health = GetComponent<Health>();
-        if (Data)
-            stateMachine = Data.Create(gameObject);
+        stateMachine = Data.Create(gameObject);
         Health.OnDamageTaken += GetHit;
     }
 
@@ -46,7 +45,6 @@ public class Controller : MonoBehaviour
 
     private void GetHit()
     {
-        if (Data)
-            stateMachine.ChangeState("GetHit");
+        stateMachine.ChangeState("GetHit");
     }
 }

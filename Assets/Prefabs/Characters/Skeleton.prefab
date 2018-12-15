@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 114287342001124366}
   - component: {fileID: 114196516377403146}
   - component: {fileID: 195770233534952832}
-  - component: {fileID: 114246703790429878}
   m_Layer: 11
   m_Name: Skeleton
   m_TagString: Untagged
@@ -1323,8 +1322,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1007033101683796}
-  m_LocalRotation: {x: 0, y: -0.9659258, z: 0, w: 0.2588191}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.88453096, z: -0, w: -0.46648157}
+  m_LocalPosition: {x: -2.2699976, y: 0, z: 4.8900013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4252849100758118}
@@ -1334,7 +1333,7 @@ Transform:
   - {fileID: 224861097523858792}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -150, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -235.612, z: 0}
 --- !u!4 &4215786108278616
 Transform:
   m_ObjectHideFlags: 1
@@ -2170,19 +2169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726e91a74028bd74491d6eb8ea5e457a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Data: {fileID: 0}
+  Data: {fileID: 11400000, guid: e3be4ecfa6ae5d241bc2869b8990573f, type: 2}
   lookRadius: 5
---- !u!114 &114246703790429878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1007033101683796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c39ee07beb98c644af792a27e07abb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114287342001124366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2194,6 +2182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1978d59036208e64a9876d57efc10282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!114 &114296824560663362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2532,11 +2521,11 @@ NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1007033101683796}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 2
