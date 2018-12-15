@@ -28,8 +28,22 @@ public partial class SkeletonStateMachineAsset
         transition.AddCondition(new AngleCheckToPlayerCondition(e => e < -0.1f));
         transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().lookRadius));
 
-        /*transition = new Transition("MeleeAttack");
+        transition = new Transition("Attack1");
         state.AddTransition(transition);
-        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().ai.stoppingDistance));*/
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
+        transition.AddCondition(new AttackAICondition("Attack1"));
+
+        transition = new Transition("Attack2");
+        state.AddTransition(transition);
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
+        transition.AddCondition(new AttackAICondition("Attack2"));
+
+        transition = new Transition("Attack3");
+        state.AddTransition(transition);
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
+        transition.AddCondition(new AttackAICondition("Attack3"));
     }
 }

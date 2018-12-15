@@ -15,7 +15,9 @@ public partial class SkeletonStateMachineAsset : StateMachineAsset
         CreateWalkForward(stateMachine);
         CreateRotateRight(stateMachine);
         CreateRotateLeft(stateMachine);
-        CreateMeleeAttack(stateMachine);
+        CreateAttack1(stateMachine);
+        CreateAttack2(stateMachine);
+        CreateAttack3(stateMachine);
         CreateGetHit(stateMachine);
         CreateDeath(stateMachine);
 

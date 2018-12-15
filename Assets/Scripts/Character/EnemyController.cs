@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -12,6 +13,7 @@ public class EnemyController : Controller, ITrigger
     public NavMeshAgent AI { get; private set; }
     public Canvas UI { get; private set; }
     public BoxCollider Collider { get; private set; }
+    public string CurrentAttackName;
     public GameObject GameObject
     {
         get { return gameObject; }
@@ -25,6 +27,7 @@ public class EnemyController : Controller, ITrigger
         Collider = GetComponent<BoxCollider>();
         base.Awake();
         Health.OnDamageTaken += CheckHP;
+        RandomAttack();
     }
 
     private void OnDrawGizmosSelected()
@@ -52,5 +55,10 @@ public class EnemyController : Controller, ITrigger
         {
             Parent.OnTrigger(gameObject);
         }
+    }
+
+    public void RandomAttack()
+    {
+        CurrentAttackName = Attacks.Keys.ToList()[Random.Range(0, Attacks.Count)];
     }
 }
