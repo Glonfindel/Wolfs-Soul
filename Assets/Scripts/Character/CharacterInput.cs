@@ -10,6 +10,7 @@ public class CharacterInput : MonoBehaviour {
     public bool MeleeAttack { get; private set; }
     public bool RangeAttack { get; private set; }
     public bool Transformation { get; private set; }
+    public bool Pause { get; private set; }
 
     private void Update()
     {
@@ -20,6 +21,7 @@ public class CharacterInput : MonoBehaviour {
         MeleeAttack = Input.GetButtonDown("MeleeAttack");
         RangeAttack = Input.GetButtonDown("RangeAttack");
         Transformation = Input.GetButtonDown("Transformation");
+        Pause = Input.GetButtonDown("Cancel");
     }
 
 }

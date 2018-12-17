@@ -13,12 +13,4 @@ public class MenuManager : MonoBehaviour {
     {
         go.GetComponent<Animator>().Play("Disappear");
     }
-    public void Resume()
-    {
-        Time.timeScale = 1;
-    }
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
 }
