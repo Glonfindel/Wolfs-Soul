@@ -13,7 +13,7 @@ public class EnemyController : Controller, ITrigger
     public NavMeshAgent AI { get; private set; }
     public Canvas UI { get; private set; }
     public BoxCollider Collider { get; private set; }
-    public string CurrentAttackName;
+    [NonSerialized] public string CurrentAttackName;
     public GameObject GameObject
     {
         get { return gameObject; }
