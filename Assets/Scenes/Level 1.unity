@@ -417,12 +417,6 @@ Prefab:
       propertyPath: m_Name
       value: Skeleton With Bone
       objectReference: {fileID: 0}
-    - target: {fileID: 114196516377403146, guid: 9d7d897643b57714f8a635f18bd1de01,
-        type: 2}
-      propertyPath: Data
-      value: 
-      objectReference: {fileID: 11400000, guid: e3be4ecfa6ae5d241bc2869b8990573f,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7d897643b57714f8a635f18bd1de01, type: 2}
   m_IsPrefabAsset: 0
@@ -1384,12 +1378,6 @@ Prefab:
       propertyPath: m_Name
       value: Skeleton With Bone
       objectReference: {fileID: 0}
-    - target: {fileID: 114196516377403146, guid: 9d7d897643b57714f8a635f18bd1de01,
-        type: 2}
-      propertyPath: Data
-      value: 
-      objectReference: {fileID: 11400000, guid: e3be4ecfa6ae5d241bc2869b8990573f,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7d897643b57714f8a635f18bd1de01, type: 2}
   m_IsPrefabAsset: 0
@@ -1713,12 +1701,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114196516377403146, guid: 9d7d897643b57714f8a635f18bd1de01,
-        type: 2}
-      propertyPath: Data
-      value: 
-      objectReference: {fileID: 11400000, guid: e3be4ecfa6ae5d241bc2869b8990573f,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7d897643b57714f8a635f18bd1de01, type: 2}
   m_IsPrefabAsset: 0
