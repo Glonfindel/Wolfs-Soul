@@ -13,4 +13,8 @@ public class MenuManager : MonoBehaviour {
     {
         go.GetComponent<Animator>().Play("Disappear");
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
