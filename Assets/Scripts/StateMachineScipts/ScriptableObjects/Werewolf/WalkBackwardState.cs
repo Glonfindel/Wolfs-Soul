@@ -24,5 +24,9 @@ public partial class WerewolfStateMachineAsset
         transition = new Transition("Idle");
         state.AddTransition(transition);
         transition.AddCondition(new VerticalAxisCondition(e => e == 0));
+
+        transition = new Transition("Transformation");
+        state.AddTransition(transition);
+        transition.AddCondition(new IsEnergyZeroCondition());
     }
 }

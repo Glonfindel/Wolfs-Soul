@@ -31,5 +31,9 @@ public partial class WerewolfStateMachineAsset
         state.AddTransition(transition);
         transition.AddCondition(new ButtonCondition("Jump"));
         transition.AddCondition(new IsGroundedCondition());
+
+        transition = new Transition("Transformation");
+        state.AddTransition(transition);
+        transition.AddCondition(new IsEnergyZeroCondition());
     }
 }
