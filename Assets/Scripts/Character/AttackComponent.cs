@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackComponent : MonoBehaviour
+public class AttackComponent : CombatComponent
 {
     public float damage = 5;
 

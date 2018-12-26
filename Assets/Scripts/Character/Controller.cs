@@ -8,13 +8,13 @@ using Random = UnityEngine.Random;
 public class Controller : MonoBehaviour
 {
     public StateMachineAsset Data;
-    public Dictionary<string, AttackComponent> Attacks = new Dictionary<string, AttackComponent>();
+    public Dictionary<string, CombatComponent> Attacks = new Dictionary<string, CombatComponent>();
     protected IStateMachine stateMachine;
     public Health Health { get; private set; }
 
     protected virtual void Awake()
     {
-        Attacks = GetComponentsInChildren<AttackComponent>().ToDictionary(e => e.name);
+        Attacks = GetComponentsInChildren<CombatComponent>().ToDictionary(e => e.name);
         SetAllAttacksActive(false);
         Health = GetComponent<Health>();
         stateMachine = Data.Create(gameObject);

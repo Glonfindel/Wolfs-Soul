@@ -16,7 +16,6 @@ public partial class WerewolfStateMachineAsset : StateMachineAsset
         CreateRotateLeft(stateMachine);
         CreateJump(stateMachine);
         CreateMeleeAttack(stateMachine);
-        CreateRangeAttack(stateMachine);
         CreateTransformation(stateMachine);
         CreateGetHit(stateMachine);
         CreateDeath(stateMachine);

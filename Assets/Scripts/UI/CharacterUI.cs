@@ -13,7 +13,8 @@ public class CharacterUI : MonoBehaviour {
 	void Start () {
         player = FindObjectOfType<CharacterController>();
         player.Health.OnDamageTaken += UpdateHP;
-	    player.Energy.OnValueChange += UpdateMP;
+	    player.Health.OnHealed += UpdateHP;
+        player.Energy.OnValueChange += UpdateMP;
 	    player.Energy.OnFullValue += Highlight;
 	    player.Energy.OnZeroValue += DisableHighlight;
     }

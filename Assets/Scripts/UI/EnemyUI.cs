@@ -12,7 +12,6 @@ public class EnemyUI : MonoBehaviour {
         health.OnDamageTaken += UpdateHP;
 	}
 	
-	// Update is called once per frame
 	void UpdateHP () {
         healthUI.fillAmount = health.HealthAsPercentage;
 	}

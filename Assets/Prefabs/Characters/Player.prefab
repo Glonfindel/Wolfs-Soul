@@ -1088,23 +1088,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1711435684680120
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4512720466348964}
-  - component: {fileID: 135992752524063220}
-  - component: {fileID: 114303926291307018}
-  m_Layer: 10
-  m_Name: RangeAttackWerewolf
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1732035080450356
 GameObject:
   m_ObjectHideFlags: 1
@@ -1324,8 +1307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4779940623032670}
-  - component: {fileID: 135600590498716090}
-  - component: {fileID: 114082680638714526}
+  - component: {fileID: 114317339093463528}
   m_Layer: 10
   m_Name: RangeAttack
   m_TagString: Untagged
@@ -1967,8 +1949,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1600370488633420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.5636676, z: -0, w: 0.82600176}
+  m_LocalPosition: {x: 23.09, y: 0, z: 3.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4213509937395618}
@@ -1976,7 +1958,6 @@ Transform:
   - {fileID: 4130396124172630}
   - {fileID: 4779940623032670}
   - {fileID: 4359335115381982}
-  - {fileID: 4512720466348964}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2256,19 +2237,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4951286048469626}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4512720466348964
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1711435684680120}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4337244539458298}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4522971473682470
 Transform:
@@ -2602,7 +2570,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839970210354278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.25}
+  m_LocalPosition: {x: 0, y: 1, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4337244539458298}
@@ -2952,18 +2920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad41bb210d404914e9bd09f13451b5cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114082680638714526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1839970210354278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcb13fe571890454f8f1631c6290bb41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
 --- !u!114 &114132060850023844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2977,18 +2933,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 8c7f2249b0c925449aff73da1c01741c, type: 2}
   WerewolfData: {fileID: 11400000, guid: 533587e88f21e8e499fa88c37353d115, type: 2}
---- !u!114 &114303926291307018
+--- !u!114 &114317339093463528
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1711435684680120}
+  m_GameObject: {fileID: 1839970210354278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcb13fe571890454f8f1631c6290bb41, type: 3}
+  m_Script: {fileID: 11500000, guid: 27673e21fe7ce1c428265f79a858c792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  Prefab: {fileID: 114245141033247328, guid: 745ea16f7c293454780f2578ead71852, type: 2}
+  Angles:
+  - 0
 --- !u!114 &114331637097868896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3022,10 +2980,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1241687554980316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcb13fe571890454f8f1631c6290bb41, type: 3}
+  m_Script: {fileID: 11500000, guid: 451c3ce7f04f77a4db2d21b86ce71b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
+  addHealth: 15
 --- !u!114 &114802540087017734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3049,36 +3008,12 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &135600590498716090
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1839970210354278}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &135626772742633338
 SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1259706211803960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &135992752524063220
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1711435684680120}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
