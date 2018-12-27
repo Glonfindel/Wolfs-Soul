@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 
 public class EnemyController : Controller, ITrigger
 {
-    //TODO: zrobić zmysły :P
     public float lookRadius = 10f;
     public NavMeshAgent AI { get; private set; }
     public Canvas UI { get; private set; }
