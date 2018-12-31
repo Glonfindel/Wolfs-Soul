@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     public GameObject PausePanel;
+    public GameObject DeathPanel;
 
     private void Update()
     {
-        if (CharacterController.Player.Input.Pause)
+        if (CharacterController.Player.Input.Pause&& !DeathPanel.activeSelf)
         {
             PausePanel.SetActive(!PausePanel.activeSelf);
             Time.timeScale = PausePanel.activeSelf ? 0 : 1;
@@ -23,6 +24,7 @@ public class PauseManager : MonoBehaviour
     public void Resume()
     {
         PausePanel.SetActive(false);
+        DeathPanel.SetActive(false);
         Time.timeScale = 1;
     }
     public void Restart()
