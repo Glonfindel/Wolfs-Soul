@@ -218,7 +218,7 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Attack5
+  m_Name: Attack4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -231,7 +231,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0ad12a48572e85146a9371a9fbdd3e7f, type: 3}
+  m_Motion: {fileID: 7400000, guid: 712983151b8a64444b82b55194fb91db, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -243,8 +243,8 @@ AnimatorState:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Attack4
-  m_Speed: 1
+  m_Name: Attack5
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []

@@ -22,6 +22,6 @@ public class CollisionTrap : Trap {
     }
 
     public override void Activate() {
-        anim.SetTrigger("Trigger");
+        if(anim) anim.SetTrigger("Trigger");
     }
 }

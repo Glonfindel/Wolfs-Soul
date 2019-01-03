@@ -16,6 +16,8 @@ public partial class DemonStateMachineAsset : StateMachineAsset
         CreateAttack1(stateMachine);
         CreateAttack2(stateMachine);
         CreateAttack3(stateMachine);
+        CreateAttack4(stateMachine);
+        CreateAttack5(stateMachine);
         CreateGetHit(stateMachine);
         CreateDeath(stateMachine);
 

@@ -45,5 +45,17 @@ public partial class DemonStateMachineAsset
         transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
         transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
         transition.AddCondition(new AttackAICondition("Attack3"));
+
+        transition = new Transition("Attack4");
+        state.AddTransition(transition);
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
+        transition.AddCondition(new AttackAICondition("Attack4"));
+
+        transition = new Transition("Attack5");
+        state.AddTransition(transition);
+        transition.AddCondition(new RangeCheckToPlayerCondition(e => e < stateMachine.User.GetComponent<EnemyController>().AI.stoppingDistance));
+        transition.AddCondition(new AngleCheckToPlayerCondition(e => e < 0.1f && e > -0.1f));
+        transition.AddCondition(new AttackAICondition("Attack5"));
     }
 }
