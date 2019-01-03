@@ -15,7 +15,7 @@ public class SpawnGameObject : MonoBehaviour
         checkAllObjectives = GetComponent<CheckAllObjectives>();
         checkAllObjectives.OnComplete += Spawn;
         go = Instantiate(prefab, transform.position + prefab.transform.position, prefab.transform.rotation);
-        if (go.GetComponent<ITrigger>() != null && transform.parent.GetComponent<CheckAllObjectives>())
+        if (go.GetComponent<ITrigger>() != null && transform.parent&&transform.parent.GetComponent<CheckAllObjectives>())
         {
             transform.parent.GetComponent<CheckAllObjectives>().AddObjective(go.GetComponent<ITrigger>());
         }
