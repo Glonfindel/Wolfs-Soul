@@ -12,6 +12,7 @@ public partial class GhoulStateMachineAsset
         state = new State("Attack1");
         stateMachine.AddState(state);
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("Attack1")));
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/GhoulAttack")));
         state.AddBehaviour(new PlayAnimationBehaviour("Attack1", 0.1f));
         state.AddBehaviour(new RandomAttackBehaviour());
 
