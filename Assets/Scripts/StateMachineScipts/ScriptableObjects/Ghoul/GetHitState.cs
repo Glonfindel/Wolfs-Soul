@@ -12,6 +12,7 @@ public partial class GhoulStateMachineAsset
         state = new State("GetHit");
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("GetHit", 0f));
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/GhoulGetHit")));
         state.AddBehaviour(new AggroAIBehaviour());
 
         transition = new Transition("Death");
