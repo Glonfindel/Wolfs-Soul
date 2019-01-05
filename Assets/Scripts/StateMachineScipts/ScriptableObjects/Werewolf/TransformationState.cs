@@ -13,6 +13,7 @@ public partial class WerewolfStateMachineAsset
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("Transformation", 0.1f));
         state.AddBehaviour(new TransformationBehaviour(false));
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/Howl")));
         state.AddBehaviour(new SpawnEffectOnExitBehaviour(Resources.Load<GameObject>("TransformationEffect")));
 
         transition = new Transition("Idle");
