@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 82524256184556752}
   - component: {fileID: 114056751697159400}
   m_Layer: 0
-  m_Name: GhoulTakeHit
+  m_Name: GhoulGetHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
