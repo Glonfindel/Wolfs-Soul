@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
 
-    public void LoadScene(string sceneName)
+    public void StartNewGame(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        PlayerPrefs.SetInt("Slot", 0);
     }
+
     public void LoadGame(int index)
     {
         string level = PlayerPrefs.GetString("Save" + index);

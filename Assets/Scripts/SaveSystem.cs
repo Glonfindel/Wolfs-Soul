@@ -28,7 +28,10 @@ public class SaveSystem : MonoBehaviour
     {
         string level = PlayerPrefs.GetString("Level" + index);
         if (!string.IsNullOrEmpty(level))
+        {
             SceneManager.LoadScene(level);
+            PlayerPrefs.SetInt("Slot", index);
+        }
     }
 
     public void SaveGame()
@@ -44,5 +47,7 @@ public class SaveSystem : MonoBehaviour
         RenderTexture.active = currentRT;
         PlayerPrefsX.WriteTextureToPlayerPrefs("Image" + index, image);
         PlayerPrefs.SetString("Level" + index, SceneManager.GetActiveScene().name);
+        PlayerPrefsX.SetVector3("Position" + index, CharacterController.Player.transform.position);
+        PlayerPrefsX.SetQuaternion("Rotation" + index, CharacterController.Player.transform.rotation);
     }
 }
