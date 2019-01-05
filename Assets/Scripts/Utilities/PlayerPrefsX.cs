@@ -662,4 +662,27 @@ public class PlayerPrefsX
         byteBlock[3 - endianDiff1] = bytes[idx + 3];
         idx += 4;
     }
+
+    public static void WriteTextureToPlayerPrefs(string tag, Texture2D tex)
+    {
+        byte[] texByte = tex.EncodeToPNG();
+        string base64Tex = System.Convert.ToBase64String(texByte);
+        PlayerPrefs.SetString(tag, base64Tex);
+        PlayerPrefs.Save();
+    }
+
+    public static Texture2D ReadTextureFromPlayerPrefs(string tag)
+    {
+        string base64Tex = PlayerPrefs.GetString(tag, null);
+        if (!string.IsNullOrEmpty(base64Tex))
+        {
+            byte[] texByte = System.Convert.FromBase64String(base64Tex);
+            Texture2D tex = new Texture2D(2, 2);
+            if (tex.LoadImage(texByte))
+            {
+                return tex;
+            }
+        }
+        return null;
+    }
 }

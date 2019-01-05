@@ -46,7 +46,7 @@ public class Controller : MonoBehaviour
 
     private void GetHit()
     {
-        if (Random.Range(0, 100) < 50 || Health.HealthAsPercentage <= 0)
+        if (Random.Range(0, 100) < 30 || Health.HealthAsPercentage <= 0)
             stateMachine.ChangeState("GetHit");
     }
 }

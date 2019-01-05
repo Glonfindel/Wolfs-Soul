@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,7 +11,7 @@ public class PauseManager : MonoBehaviour
 
     private void Update()
     {
-        if (CharacterController.Player.Input.Pause&& !DeathPanel.activeSelf)
+        if (CharacterController.Player.Input.Pause && !DeathPanel.activeSelf)
         {
             PausePanel.SetActive(!PausePanel.activeSelf);
             Time.timeScale = PausePanel.activeSelf ? 0 : 1;
