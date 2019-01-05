@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4723007339893584}
   - component: {fileID: 198854062932396886}
   - component: {fileID: 199141690069253290}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: PivotFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33825360929451862}
   - component: {fileID: 23212985562401804}
   - component: {fileID: 114998205150091948}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tornado_Loop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 108175176863545324}
   - component: {fileID: 114910074750359826}
   - component: {fileID: 114673868089851414}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Point light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 4441552170237218}
   - component: {fileID: 198420214861526064}
   - component: {fileID: 199474515416293070}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Rocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 198955235390424760}
   - component: {fileID: 199726577173664014}
   - component: {fileID: 114860107239742450}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 198687491192061712}
   - component: {fileID: 199271928684227870}
   - component: {fileID: 114520325363042378}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireBorderBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 82860549675722542}
   - component: {fileID: 114942365287845438}
   - component: {fileID: 166443351900999770}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tornado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 4913341495264166}
   - component: {fileID: 198483954241607090}
   - component: {fileID: 199629760110484184}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Distortion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4886538884998274}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 108573611774555694}
   - component: {fileID: 114876489353956378}
   - component: {fileID: 114370357002407636}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 198281607738911318}
   - component: {fileID: 199577821376027348}
   - component: {fileID: 114414917920214082}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireCloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 198826360717144860}
   - component: {fileID: 199673279257167930}
   - component: {fileID: 114905865671061528}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireBorderFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 4510177019229846}
   - component: {fileID: 119336762905393302}
   - component: {fileID: 114461661350618482}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Decal_Loop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 65434549050653828}
   - component: {fileID: 114338751691200682}
   - component: {fileID: 114154750297931256}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Demon Skill 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 4808597944072412}
   - component: {fileID: 198746982170528028}
   - component: {fileID: 199147513056645138}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Rocks1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 4104631978773044}
   - component: {fileID: 198412098407489504}
   - component: {fileID: 199947504523952366}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Rocks2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 82319418678013264}
   - component: {fileID: 166234869490643380}
   - component: {fileID: 114960554761692098}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,8 +1234,8 @@ MonoBehaviour:
   ShaderColorProperty: 0
   Color:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 0}
-    key1: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 1, g: 0.5084963, b: 0.3066038, a: 0}
+    key1: {r: 1, g: 0.5588885, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 1}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}

@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4937061862045566}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4795275760725758}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4100855203670276}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4963336803190210}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 198439609452955696}
   - component: {fileID: 199524541436037122}
   - component: {fileID: 114995685476536248}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ashes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4455245504890954}
   - component: {fileID: 182547451728530214}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: WindZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 119733340646462160}
   - component: {fileID: 114982973196718076}
   - component: {fileID: 114026585904386014}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: DecalCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 198904439590360802}
   - component: {fileID: 199129018685017844}
   - component: {fileID: 114657422336161556}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireSkin (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 119370970015920774}
   - component: {fileID: 114572396580405020}
   - component: {fileID: 114742505994405616}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Decal (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 119845807767209126}
   - component: {fileID: 114420943092954750}
   - component: {fileID: 114832579375224786}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: DecalBlackCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4326824687669706}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 4624118156032754}
   - component: {fileID: 198791377603299328}
   - component: {fileID: 199056898739906560}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 198918430631736368}
   - component: {fileID: 199220326946735546}
   - component: {fileID: 114332094633026204}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Explosion1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4720807795925098}
   - component: {fileID: 114300981253916500}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: CamShakeOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4693798349142956}
   - component: {fileID: 137965266644208836}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 114945902626054072}
   - component: {fileID: 114200134050318372}
   - component: {fileID: 114376068306046612}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: LazyLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 4937725322390274}
   - component: {fileID: 198418104160242738}
   - component: {fileID: 199045841116054914}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Distort
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4826275465378262}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4278996509238546}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 199839780180607528}
   - component: {fileID: 114478844129818784}
   - component: {fileID: 114725582029460830}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: LightParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4534715097762224}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4328608907681724}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 108727386998698542}
   - component: {fileID: 114460851837747444}
   - component: {fileID: 114916183802316622}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4067440687585188}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 4315183739317730}
   - component: {fileID: 198355831202737576}
   - component: {fileID: 199473021127346158}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4022217211503872}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: LazyLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4850509974138394}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4625021076134594}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4092180372076778}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 4515240554417702}
   - component: {fileID: 96887939058710076}
   - component: {fileID: 114138874427159706}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4606825451496694}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4404764906888206}
   - component: {fileID: 95648767029199432}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4860254096031640}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 108367373794378820}
   - component: {fileID: 114613637932355814}
   - component: {fileID: 114391686617805322}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4289416570811440}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Dummy001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4021022135926490}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 4685655684118860}
   - component: {fileID: 198569742248005782}
   - component: {fileID: 199359048005165458}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Magma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 114045510585540906}
   - component: {fileID: 114948728023187954}
   - component: {fileID: 114110312331922824}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Demon Skill 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 4018274360076882}
   - component: {fileID: 82028984788588994}
   - component: {fileID: 114251924703665680}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4400045350425874}
   - component: {fileID: 82925444010901850}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FadeOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4534754426100114}
   - component: {fileID: 114482611935516838}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: LazyLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 114387099049028870}
   - component: {fileID: 114173530975600272}
   - component: {fileID: 114382292064677802}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 4401086601698774}
   - component: {fileID: 198707750714622504}
   - component: {fileID: 199994374628611222}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4826469810353162}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4488246023723872}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -757,7 +757,7 @@ GameObject:
   - component: {fileID: 198409265685370622}
   - component: {fileID: 199138362957399926}
   - component: {fileID: 114753886390608938}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4185410624910364}
   - component: {fileID: 114093870150069930}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: CamShakeIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 119959053248799386}
   - component: {fileID: 114728156572755000}
   - component: {fileID: 114588570309320046}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: DecalCrack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -806,7 +806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4488548725613602}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Dummy002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4797980375399096}
   - component: {fileID: 82304845762440938}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FadeIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,7 +840,7 @@ GameObject:
   - component: {fileID: 119591909909075748}
   - component: {fileID: 114855887468957732}
   - component: {fileID: 114147293627421600}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: DecalCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4358973224682344}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 198648450824615346}
   - component: {fileID: 199529517606659350}
   - component: {fileID: 114941410269002658}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FireSkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4902541100556984}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bone021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   - component: {fileID: 4466078812565136}
   - component: {fileID: 82982507828301460}
   - component: {fileID: 114022914888545054}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Idle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1235,7 +1235,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1667665816850694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 11, y: 0, z: -36}
   m_LocalScale: {x: 1, y: 0.75, z: 1}
   m_Children:
   - {fileID: 4625021076134594}
@@ -3500,8 +3500,8 @@ MonoBehaviour:
   ShaderColorProperty: 0
   Color:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 0}
-    key1: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 0.9056604, g: 0.35355544, b: 0.03844783, a: 0}
+    key1: {r: 0.8773585, g: 0.61336035, b: 0.028969401, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 1}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
