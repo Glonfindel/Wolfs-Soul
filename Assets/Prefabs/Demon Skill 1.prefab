@@ -2374,7 +2374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43bc08a16d43f641a8c3d028066eade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time: 5.75
+  Time: 3
   RepeatTime: 0
 --- !u!114 &114093870150069930
 MonoBehaviour:
@@ -2740,7 +2740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActivatedGameObject: {fileID: 1278762267912858}
-  Delay: 5.6
+  Delay: 3
 --- !u!114 &114382292064677802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2753,7 +2753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActivatedGameObject: {fileID: 1718711760214370}
-  Delay: 5.5
+  Delay: 3
 --- !u!114 &114387099049028870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3460,7 +3460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActivatedGameObject: {fileID: 1551953792329900}
-  Delay: 5.4
+  Delay: 3
 --- !u!114 &114947475692376558
 MonoBehaviour:
   m_ObjectHideFlags: 1
