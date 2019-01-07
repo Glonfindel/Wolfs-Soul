@@ -19,9 +19,14 @@ public class SaveSystem : MonoBehaviour
         image = GetComponentsInChildren<Image>().First(e => e.gameObject != gameObject);
         Texture2D tex = PlayerPrefsX.ReadTextureFromPlayerPrefs("Image" + index);
         if (tex)
+        {
+            image.enabled = true;
             image.sprite = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
+        }
         else
+        {
             image.enabled = false;
+        }
     }
 
     public void LoadGame()
