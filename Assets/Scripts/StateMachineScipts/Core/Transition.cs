@@ -2,7 +2,7 @@
 
 public class Transition
 {
-    private List<Condition> conditions = new List<Condition>();
+    private List<ICondition> conditions = new List<ICondition>();
     private string nextState;
 
     public Transition(string nextState)
@@ -24,7 +24,7 @@ public class Transition
         return true;
     }
 
-    public void AddCondition(Condition condition)
+    public void AddCondition(ICondition condition)
     {
         conditions.Add(condition);
     }

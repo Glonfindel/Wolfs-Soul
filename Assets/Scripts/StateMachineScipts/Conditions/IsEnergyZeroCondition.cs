@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IsEnergyZeroCondition : Condition
+public class IsEnergyZeroCondition : ICondition
 {
-    public override bool Check(GameObject target)
+    public bool Check(GameObject target)
     {
         return target.GetComponent<Energy>().EnergyAsPercentage <= 0;
     }

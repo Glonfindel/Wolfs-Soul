@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public abstract class Condition
+public interface ICondition
 {
 
-    public abstract bool Check(GameObject target);
+    bool Check(GameObject target);
 
 }

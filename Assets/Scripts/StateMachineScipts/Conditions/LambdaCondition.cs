@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LambdaCondition : Condition
+public class LambdaCondition : ICondition
 {
 
     private Func<bool> checker;
@@ -12,7 +12,7 @@ public class LambdaCondition : Condition
     {
         this.checker = checker;
     }
-    public override bool Check(GameObject target)
+    public bool Check(GameObject target)
     {
         return checker();
     }

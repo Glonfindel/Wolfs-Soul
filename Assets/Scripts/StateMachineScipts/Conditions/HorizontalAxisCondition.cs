@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorizontalAxisCondition : Condition
+public class HorizontalAxisCondition : ICondition
 {
 
     private Func<float, bool> checker;
@@ -12,7 +12,7 @@ public class HorizontalAxisCondition : Condition
     {
         this.checker = checker;
     }
-    public override bool Check(GameObject target)
+    public bool Check(GameObject target)
     {
         return checker(target.GetComponent<CharacterController>().Input.Horizontal);
     }
