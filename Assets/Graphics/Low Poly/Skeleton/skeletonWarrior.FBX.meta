@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 51682e9469f077245af74bd4df3aa47f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 2HANDED_SWORD
+    100002: HELMET
+    100004: PROTECTION
+    100006: SHIELD
+    100008: skeleton_knight
+    100010: skeleton_knight_
+    100012: skeleton_knight_ Head
+    100014: skeleton_knight_ L Calf
+    100016: skeleton_knight_ L Clavicle
+    100018: skeleton_knight_ L Finger0
+    100020: skeleton_knight_ L Finger01
+    100022: skeleton_knight_ L Finger02
+    100024: skeleton_knight_ L Finger1
+    100026: skeleton_knight_ L Finger11
+    100028: skeleton_knight_ L Finger12
+    100030: skeleton_knight_ L Finger2
+    100032: skeleton_knight_ L Finger21
+    100034: skeleton_knight_ L Finger22
+    100036: skeleton_knight_ L Finger3
+    100038: skeleton_knight_ L Finger31
+    100040: skeleton_knight_ L Finger32
+    100042: skeleton_knight_ L Finger4
+    100044: skeleton_knight_ L Finger41
+    100046: skeleton_knight_ L Finger42
+    100048: skeleton_knight_ L Foot
+    100050: skeleton_knight_ L Forearm
+    100052: skeleton_knight_ L Hand
+    100054: skeleton_knight_ L Thigh
+    100056: skeleton_knight_ L Toe0
+    100058: skeleton_knight_ L Toe01
+    100060: skeleton_knight_ L Toe02
+    100062: skeleton_knight_ L UpperArm
+    100064: skeleton_knight_ Neck
+    100066: skeleton_knight_ Neck1
+    100068: skeleton_knight_ Pelvis
+    100070: skeleton_knight_ R Calf
+    100072: skeleton_knight_ R Clavicle
+    100074: skeleton_knight_ R Finger0
+    100076: skeleton_knight_ R Finger01
+    100078: skeleton_knight_ R Finger02
+    100080: skeleton_knight_ R Finger1
+    100082: skeleton_knight_ R Finger11
+    100084: skeleton_knight_ R Finger12
+    100086: skeleton_knight_ R Finger2
+    100088: skeleton_knight_ R Finger21
+    100090: skeleton_knight_ R Finger22
+    100092: skeleton_knight_ R Finger3
+    100094: skeleton_knight_ R Finger31
+    100096: skeleton_knight_ R Finger32
+    100098: skeleton_knight_ R Finger4
+    100100: skeleton_knight_ R Finger41
+    100102: skeleton_knight_ R Finger42
+    100104: skeleton_knight_ R Foot
+    100106: skeleton_knight_ R Forearm
+    100108: skeleton_knight_ R Hand
+    100110: skeleton_knight_ R Thigh
+    100112: skeleton_knight_ R Toe0
+    100114: skeleton_knight_ R Toe01
+    100116: skeleton_knight_ R Toe02
+    100118: skeleton_knight_ R UpperArm
+    100120: skeleton_knight_ Spine
+    100122: skeleton_knight_ Spine1
+    100124: skeleton_knight_ Spine2
+    100126: //RootNode
+    100128: SWORD
+    100130: WEAPON_BONE
+    400000: 2HANDED_SWORD
+    400002: HELMET
+    400004: PROTECTION
+    400006: SHIELD
+    400008: skeleton_knight
+    400010: skeleton_knight_
+    400012: skeleton_knight_ Head
+    400014: skeleton_knight_ L Calf
+    400016: skeleton_knight_ L Clavicle
+    400018: skeleton_knight_ L Finger0
+    400020: skeleton_knight_ L Finger01
+    400022: skeleton_knight_ L Finger02
+    400024: skeleton_knight_ L Finger1
+    400026: skeleton_knight_ L Finger11
+    400028: skeleton_knight_ L Finger12
+    400030: skeleton_knight_ L Finger2
+    400032: skeleton_knight_ L Finger21
+    400034: skeleton_knight_ L Finger22
+    400036: skeleton_knight_ L Finger3
+    400038: skeleton_knight_ L Finger31
+    400040: skeleton_knight_ L Finger32
+    400042: skeleton_knight_ L Finger4
+    400044: skeleton_knight_ L Finger41
+    400046: skeleton_knight_ L Finger42
+    400048: skeleton_knight_ L Foot
+    400050: skeleton_knight_ L Forearm
+    400052: skeleton_knight_ L Hand
+    400054: skeleton_knight_ L Thigh
+    400056: skeleton_knight_ L Toe0
+    400058: skeleton_knight_ L Toe01
+    400060: skeleton_knight_ L Toe02
+    400062: skeleton_knight_ L UpperArm
+    400064: skeleton_knight_ Neck
+    400066: skeleton_knight_ Neck1
+    400068: skeleton_knight_ Pelvis
+    400070: skeleton_knight_ R Calf
+    400072: skeleton_knight_ R Clavicle
+    400074: skeleton_knight_ R Finger0
+    400076: skeleton_knight_ R Finger01
+    400078: skeleton_knight_ R Finger02
+    400080: skeleton_knight_ R Finger1
+    400082: skeleton_knight_ R Finger11
+    400084: skeleton_knight_ R Finger12
+    400086: skeleton_knight_ R Finger2
+    400088: skeleton_knight_ R Finger21
+    400090: skeleton_knight_ R Finger22
+    400092: skeleton_knight_ R Finger3
+    400094: skeleton_knight_ R Finger31
+    400096: skeleton_knight_ R Finger32
+    400098: skeleton_knight_ R Finger4
+    400100: skeleton_knight_ R Finger41
+    400102: skeleton_knight_ R Finger42
+    400104: skeleton_knight_ R Foot
+    400106: skeleton_knight_ R Forearm
+    400108: skeleton_knight_ R Hand
+    400110: skeleton_knight_ R Thigh
+    400112: skeleton_knight_ R Toe0
+    400114: skeleton_knight_ R Toe01
+    400116: skeleton_knight_ R Toe02
+    400118: skeleton_knight_ R UpperArm
+    400120: skeleton_knight_ Spine
+    400122: skeleton_knight_ Spine1
+    400124: skeleton_knight_ Spine2
+    400126: //RootNode
+    400128: SWORD
+    400130: WEAPON_BONE
+    2100000: PROTECTION
+    2100002: SKELETON_KNIGHT
+    2100004: HELMET_ALBEDO
+    2100006: SHIELD
+    2100008: 2HANDED_SWORD
+    2100010: SWORD
+    2300000: 2HANDED_SWORD
+    2300002: HELMET
+    2300004: SHIELD
+    2300006: SWORD
+    2300008: WEAPON_BONE
+    3300000: 2HANDED_SWORD
+    3300002: HELMET
+    3300004: SHIELD
+    3300006: SWORD
+    3300008: WEAPON_BONE
+    4300000: PROTECTION
+    4300002: skeleton_knight
+    4300004: HELMET
+    4300006: SHIELD
+    4300008: 2HANDED_SWORD
+    4300010: WEAPON_BONE
+    4300012: SWORD
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: PROTECTION
+    13700002: skeleton_knight
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
