@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonCondition : Condition
+public class ButtonCondition : ICondition
 {
     private string buttonName;
 
@@ -12,7 +12,7 @@ public class ButtonCondition : Condition
         this.buttonName = buttonName;
     }
 
-    public override bool Check(GameObject target)
+    public bool Check(GameObject target)
     {
         return Input.GetButtonDown(buttonName);
     }

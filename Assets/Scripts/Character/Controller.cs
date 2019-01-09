@@ -5,13 +5,13 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(Health))]
 public class Controller : MonoBehaviour
 {
     public StateMachineAsset Data;
     public Dictionary<string, CombatComponent> Attacks = new Dictionary<string, CombatComponent>();
     protected IStateMachine stateMachine;
     public Health Health { get; private set; }
-
     protected virtual void Awake()
     {
         Attacks = GetComponentsInChildren<CombatComponent>().ToDictionary(e => e.name);

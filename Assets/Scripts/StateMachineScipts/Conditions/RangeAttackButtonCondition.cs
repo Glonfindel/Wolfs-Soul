@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangeAttackButtonCondition : Condition
+public class RangeAttackButtonCondition : ICondition
 {
-    public override bool Check(GameObject target)
+    public bool Check(GameObject target)
     {
         return target.GetComponent<CharacterController>().Input.RangeAttack;
     }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangeCheckToPlayerCondition : Condition
+public class RangeCheckToPlayerCondition : ICondition
 {
 
     private Func<float, bool> checker;
@@ -12,7 +12,7 @@ public class RangeCheckToPlayerCondition : Condition
     {
         this.checker = checker;
     }
-    public override bool Check(GameObject target)
+    public bool Check(GameObject target)
     {
         return checker(Vector3.Distance(target.transform.position, CharacterController.Player.transform.position));
     }
