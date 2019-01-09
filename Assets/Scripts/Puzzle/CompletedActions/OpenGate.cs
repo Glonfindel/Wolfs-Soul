@@ -21,6 +21,6 @@ public class OpenGate : MonoBehaviour
 
     private void Open()
     {
-        gate.SetActive(false);
+        gate.GetComponent<Animator>().Play("Open");
     }
 }
