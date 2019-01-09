@@ -8,10 +8,11 @@ public class PauseManager : MonoBehaviour
 {
     public GameObject PausePanel;
     public GameObject DeathPanel;
+    public GameObject WinPanel;
 
     private void Update()
     {
-        if (CharacterController.Player.Input.Pause && !DeathPanel.activeSelf)
+        if (CharacterController.Player.Input.Pause && !DeathPanel.activeSelf && !WinPanel.activeSelf)
         {
             PausePanel.SetActive(!PausePanel.activeSelf);
             Time.timeScale = PausePanel.activeSelf ? 0 : 1;
@@ -21,6 +22,7 @@ public class PauseManager : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        Time.timeScale = 1;
     }
     public void Resume()
     {
@@ -31,5 +33,6 @@ public class PauseManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 }
