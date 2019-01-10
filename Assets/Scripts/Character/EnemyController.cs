@@ -61,4 +61,10 @@ public class EnemyController : Controller, ITrigger
     {
         CurrentAttackName = Attacks.Keys.ToList()[Random.Range(0, Attacks.Count)];
     }
+
+    protected override void GetHit()
+    {
+        lookRadius = float.PositiveInfinity;
+        base.GetHit();
+    }
 }

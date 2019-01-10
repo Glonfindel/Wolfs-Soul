@@ -44,7 +44,7 @@ public class Controller : MonoBehaviour
         Attacks[name].gameObject.SetActive(active);
     }
 
-    private void GetHit()
+    protected virtual void GetHit()
     {
         if (Random.Range(0, 100) < 30 || Health.HealthAsPercentage <= 0)
             stateMachine.ChangeState("GetHit");

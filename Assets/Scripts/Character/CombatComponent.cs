@@ -2,5 +2,5 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombatComponent : MonoBehaviour {
+public abstract class CombatComponent : MonoBehaviour {
 }

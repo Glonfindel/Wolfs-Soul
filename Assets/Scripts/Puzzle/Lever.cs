@@ -30,6 +30,7 @@ public class Lever : MonoBehaviour,ITrigger {
         if (trigger != null && Check(trigger.gameObject))
         {
             OnTrigger(gameObject);
+            GetComponent<Animator>().Play("Open");
         }
     }
 }

@@ -17,6 +17,7 @@ public class WinGameScript : MonoBehaviour
         if (other.GetComponent<CharacterController>())
         {
             uiManager.WinPanel.SetActive(true);
+            Camera.main.transform.parent = null;
             other.gameObject.SetActive(false);
         }
     }
