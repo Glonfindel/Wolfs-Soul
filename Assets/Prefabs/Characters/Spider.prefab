@@ -2027,7 +2027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: b935e82466df4e548b4091b5d5daff13, type: 2}
-  lookRadius: 5
+  lookRadius: 7
 --- !u!114 &114322730147642840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2077,7 +2077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb13fe571890454f8f1631c6290bb41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 3
 --- !u!114 &114475615488234064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2126,7 +2126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1978d59036208e64a9876d57efc10282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 75
 --- !u!114 &114840185538753214
 MonoBehaviour:
   m_ObjectHideFlags: 1

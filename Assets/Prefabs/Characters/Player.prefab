@@ -3029,7 +3029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  addEnergy: 10
+  addEnergy: 5
 --- !u!114 &114527255531765134
 MonoBehaviour:
   m_ObjectHideFlags: 1
