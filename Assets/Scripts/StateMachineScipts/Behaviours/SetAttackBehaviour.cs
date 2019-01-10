@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class RandomAttackBehaviour : IBehaviour
+public class SetAttackBehaviour : IBehaviour
 {
     public IStateMachine Machine { get; set; }
 
@@ -10,7 +10,7 @@ public class RandomAttackBehaviour : IBehaviour
 
     public void Exit()
     {
-        Machine.User.GetComponent<EnemyController>().RandomAttack();
+        Machine.User.GetComponent<EnemyController>().SetAttack();
     }
 
     public void Update(float time)

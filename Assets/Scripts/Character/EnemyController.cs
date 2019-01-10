@@ -27,7 +27,7 @@ public class EnemyController : Controller, ITrigger
         Collider = GetComponent<BoxCollider>();
         base.Awake();
         Health.OnDamageTaken += CheckHP;
-        RandomAttack();
+        SetAttack();
     }
 
     private void OnDrawGizmosSelected()
@@ -57,7 +57,7 @@ public class EnemyController : Controller, ITrigger
         }
     }
 
-    public void RandomAttack()
+    public virtual void SetAttack()
     {
         CurrentAttackName = Attacks.Keys.ToList()[Random.Range(0, Attacks.Count)];
     }

@@ -13,7 +13,7 @@ public partial class UndeadStateMachineAsset
         stateMachine.AddState(state);
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("Attack3")));
         state.AddBehaviour(new PlayAnimationBehaviour("Attack3", 0.1f));
-        state.AddBehaviour(new RandomAttackBehaviour());
+        state.AddBehaviour(new SetAttackBehaviour());
 
         transition = new Transition("Idle");
         state.AddTransition(transition);

@@ -13,7 +13,7 @@ public partial class DemonStateMachineAsset
         stateMachine.AddState(state);
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("Attack2")));
         state.AddBehaviour(new PlayAnimationBehaviour("Attack2", 0.1f));
-        state.AddBehaviour(new RandomAttackBehaviour());
+        state.AddBehaviour(new SetAttackBehaviour());
 
         transition = new Transition("Idle");
         state.AddTransition(transition);

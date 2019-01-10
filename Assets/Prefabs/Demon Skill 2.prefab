@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 65434549050653828}
   - component: {fileID: 114338751691200682}
   - component: {fileID: 114154750297931256}
+  - component: {fileID: 114302014270956164}
   m_Layer: 14
   m_Name: Demon Skill 2
   m_TagString: Untagged
@@ -615,6 +616,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Time: 1
   RepeatTime: 0.5
+--- !u!114 &114302014270956164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752752315804632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37fac21d1f093d344816942d1abce94e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TimeOut: 10
+  m_DetachChildren: 0
 --- !u!114 &114338751691200682
 MonoBehaviour:
   m_ObjectHideFlags: 1

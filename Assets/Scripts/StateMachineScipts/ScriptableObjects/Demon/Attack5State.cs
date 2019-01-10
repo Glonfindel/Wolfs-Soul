@@ -14,7 +14,7 @@ public partial class DemonStateMachineAsset
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("Attack5")));
         state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/FireBreath")));
         state.AddBehaviour(new PlayAnimationBehaviour("Attack5", 0.1f));
-        state.AddBehaviour(new RandomAttackBehaviour());
+        state.AddBehaviour(new SetAttackBehaviour());
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
