@@ -14,6 +14,6 @@ public class ButtonCondition : ICondition
 
     public bool Check(GameObject target)
     {
-        return Input.GetButtonDown(buttonName);
+        return !UIManager.Instance.PausePanel.activeSelf && Input.GetButtonDown(buttonName);
     }
 }

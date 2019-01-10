@@ -6,15 +6,22 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PauseManager : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance;
     public GameObject PausePanel;
+    public GameObject SavePanel;
     public GameObject DeathPanel;
     public GameObject WinPanel;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Update()
     {
-        if (CharacterController.Player.Input.Pause && !DeathPanel.activeSelf && !WinPanel.activeSelf)
+        if (CharacterController.Player.Input.Pause && !DeathPanel.activeSelf && !WinPanel.activeSelf && !SavePanel.activeSelf)
         {
             PausePanel.SetActive(!PausePanel.activeSelf);
             if (PausePanel.activeSelf) EventSystem.current.SetSelectedGameObject(PausePanel.GetComponentInChildren<Selectable>().gameObject);
@@ -30,6 +37,7 @@ public class PauseManager : MonoBehaviour
     }
     public void Resume()
     {
+        EventSystem.current.SetSelectedGameObject(null);
         PausePanel.SetActive(false);
         DeathPanel.SetActive(false);
         Time.timeScale = 1;
@@ -38,5 +46,12 @@ public class PauseManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
+    }
+
+    public void ShowSaves()
+    {
+        SavePanel.SetActive(!SavePanel.activeSelf);
+        if (SavePanel.activeSelf) EventSystem.current.SetSelectedGameObject(SavePanel.GetComponentInChildren<Selectable>().gameObject);
+        else EventSystem.current.SetSelectedGameObject(PausePanel.GetComponentInChildren<Selectable>().gameObject);
     }
 }

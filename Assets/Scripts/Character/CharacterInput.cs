@@ -1,7 +1,8 @@
 ﻿using System;
 using UnityEngine;
 
-public class CharacterInput : MonoBehaviour {
+public class CharacterInput : MonoBehaviour
+{
 
     public float Horizontal { get; private set; }
     public float Vertical { get; private set; }

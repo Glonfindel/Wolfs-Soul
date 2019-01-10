@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ShowDeathMenuBehaviour : IBehaviour
 {
@@ -9,13 +11,14 @@ public class ShowDeathMenuBehaviour : IBehaviour
 
     public ShowDeathMenuBehaviour(bool active)
     {
-        deathMenu = GameObject.FindObjectOfType<PauseManager>().DeathPanel;
+        deathMenu = GameObject.FindObjectOfType<UIManager>().DeathPanel;
         this.active=active;
     }
 
     public void Enter()
     {
         deathMenu.SetActive(active);
+        EventSystem.current.SetSelectedGameObject(deathMenu.GetComponentInChildren<Selectable>().gameObject);
     }
 
     public void Exit()
