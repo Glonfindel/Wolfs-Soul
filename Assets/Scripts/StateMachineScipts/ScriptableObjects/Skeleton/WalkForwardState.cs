@@ -13,6 +13,7 @@ public partial class SkeletonStateMachineAsset
         stateMachine.AddState(state);
         state.AddBehaviour(new MoveAIBehaviour());
         state.AddBehaviour(new PlayAnimationBehaviour("Run", 0.1f));
+        state.AddBehaviour(new AggroAIBehaviour());
 
         transition = new Transition("Idle");
         state.AddTransition(transition);
