@@ -999,7 +999,7 @@ GameObject:
   - component: {fileID: 114950508405231778}
   - component: {fileID: 114557845740912656}
   - component: {fileID: 114524540947070104}
-  m_Layer: 11
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1091,7 +1091,7 @@ GameObject:
   - component: {fileID: 224312627525240168}
   - component: {fileID: 222682816853245600}
   - component: {fileID: 114443881654587364}
-  m_Layer: 11
+  m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1504,7 +1504,7 @@ GameObject:
   - component: {fileID: 222507143366462818}
   - component: {fileID: 114126665739619514}
   - component: {fileID: 114251776970559842}
-  m_Layer: 11
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2796,8 +2796,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1027971012791462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 0.000012216803, z: -47.492687}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4385619779571090}
@@ -3804,7 +3804,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.77013093, b: 0.25098038, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4722,7 +4722,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 0.2352941, g: 0, b: 0, a: 1}
+        key1: {r: 0.23529412, g: 0.19974184, b: 0, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -8059,7 +8059,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: bcaef759499058447a2a56d7488a927a, type: 2}
+  - {fileID: 2100000, guid: 493cb3854239fba47af45d61e7e97c98, type: 2}
   - {fileID: 2100000, guid: bcaef759499058447a2a56d7488a927a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
