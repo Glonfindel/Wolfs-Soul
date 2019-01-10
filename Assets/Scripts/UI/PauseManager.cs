@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class PauseManager : MonoBehaviour
         if (CharacterController.Player.Input.Pause && !DeathPanel.activeSelf && !WinPanel.activeSelf)
         {
             PausePanel.SetActive(!PausePanel.activeSelf);
+            if (PausePanel.activeSelf) EventSystem.current.SetSelectedGameObject(PausePanel.GetComponentInChildren<Selectable>().gameObject);
+            else EventSystem.current.SetSelectedGameObject(null);
             Time.timeScale = PausePanel.activeSelf ? 0 : 1;
         }
     }
