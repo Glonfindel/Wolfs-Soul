@@ -12,6 +12,7 @@ public partial class WolfStateMachineAsset
         state = new State("Idle");
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("Idle", 0.1f));
+        state.AddBehaviour(new RegenerationBehaviour(stateMachine.User, 1.5f));
 
         transition = new Transition("WalkForward");
         state.AddTransition(transition);

@@ -12,6 +12,7 @@ public partial class WerewolfStateMachineAsset
         state = new State("Idle");
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("Idle", 0.1f));
+        state.AddBehaviour(new RegenerationBehaviour(stateMachine.User, 2f));
         state.AddBehaviour(new DrainEnergyBehaviour(3));
 
         transition = new Transition("WalkForward");
