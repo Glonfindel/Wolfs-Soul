@@ -11,6 +11,7 @@ public partial class VampireStateMachineAsset
 
         state = new State("Attack2");
         stateMachine.AddState(state);
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/GhoulAttack")));
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("Attack2")));
         state.AddBehaviour(new PlayAnimationBehaviour("Attack2", 0.1f));
         state.AddBehaviour(new SetAttackBehaviour());

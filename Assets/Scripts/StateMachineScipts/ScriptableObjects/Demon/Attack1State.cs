@@ -11,6 +11,7 @@ public partial class DemonStateMachineAsset
 
         state = new State("Attack1");
         stateMachine.AddState(state);
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/DemonAttack1")));
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("Attack1")));
         state.AddBehaviour(new PlayAnimationBehaviour("Attack1", 0.1f));
         state.AddBehaviour(new SetAttackBehaviour());

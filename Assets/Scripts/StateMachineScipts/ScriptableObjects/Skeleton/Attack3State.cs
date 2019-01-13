@@ -11,6 +11,7 @@ public partial class SkeletonStateMachineAsset
 
         state = new State("Attack3");
         stateMachine.AddState(state);
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/SkeletonAttack")));
         state.AddBehaviour(new ExecuteAttackOnAnimCurveBehaviour(new AttackBehaviour("Attack3")));
         state.AddBehaviour(new PlayAnimationBehaviour("Attack3", 0.1f));
         state.AddBehaviour(new SetAttackBehaviour());

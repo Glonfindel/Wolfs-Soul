@@ -12,6 +12,7 @@ public partial class VampireStateMachineAsset
         state = new State("GetHit");
         stateMachine.AddState(state);
         state.AddBehaviour(new PlayAnimationBehaviour("GetHit", 0f));
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/GhoulGetHit")));
 
         transition = new Transition("Death");
         state.AddTransition(transition);
