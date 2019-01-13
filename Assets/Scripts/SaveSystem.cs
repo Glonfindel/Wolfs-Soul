@@ -34,7 +34,7 @@ public class SaveSystem : MonoBehaviour
         string level = PlayerPrefs.GetString("Level" + index);
         if (!string.IsNullOrEmpty(level))
         {
-            SceneManager.LoadScene(level);
+            StartCoroutine(FindObjectOfType<MenuManager>().LoadAsynchronously(level));
             PlayerPrefs.SetInt("Slot", index);
         }
     }
