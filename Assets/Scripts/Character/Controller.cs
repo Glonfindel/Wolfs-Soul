@@ -16,10 +16,14 @@ public class Controller : MonoBehaviour
     protected virtual void Awake()
     {
         Attacks = GetComponentsInChildren<CombatComponent>().ToDictionary(e => e.name);
-        SetAllAttacksActive(false);
         Health = GetComponent<Health>();
         stateMachine = Data.Create(gameObject);
         Health.OnDamageTaken += GetHit;
+    }
+
+    private void Start()
+    {
+        SetAllAttacksActive(false);
     }
 
     private void OnDestroy()
