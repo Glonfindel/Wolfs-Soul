@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
     public GameObject LoadingScreen;
-
+    
     public void StartNewGame(string sceneName)
     {
         PlayerPrefs.SetInt("Slot", 0);
