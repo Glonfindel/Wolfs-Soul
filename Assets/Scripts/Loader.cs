@@ -13,7 +13,6 @@ public class Loader : MonoBehaviour {
         {
             foreach (var obj in PlayerPrefsX.GetStringArray("ITriggers" + slot))
             {
-                Debug.Log(obj);
                 var trigger = Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)).OfType<ITrigger>().FirstOrDefault(e => e.GameObject.name == obj);
                 if (trigger != null)
                 {
@@ -21,7 +20,7 @@ public class Loader : MonoBehaviour {
                         trigger.Parent.OnTrigger(trigger.GameObject);
 
                     if (trigger is EnemyController)
-                        Destroy(trigger.GameObject);
+                        DestroyImmediate(trigger.GameObject, true);
                 }
             }
             CharacterController.Player.transform.position = PlayerPrefsX.GetVector3("Position" + slot);
