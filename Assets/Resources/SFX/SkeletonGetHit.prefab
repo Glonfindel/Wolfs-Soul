@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4887738684147382}
   - component: {fileID: 82546612955838466}
   - component: {fileID: 114954837961857650}
+  - component: {fileID: 114954277430040940}
   m_Layer: 0
   m_Name: SkeletonGetHit
   m_TagString: Untagged
@@ -136,6 +137,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114954277430040940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1887025763399044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c50d99a113f4d34880508e5dfc2d385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114954837961857650
 MonoBehaviour:
   m_ObjectHideFlags: 1

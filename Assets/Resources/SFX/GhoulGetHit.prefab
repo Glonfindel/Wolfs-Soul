@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4153435295453088}
   - component: {fileID: 82524256184556752}
   - component: {fileID: 114056751697159400}
+  - component: {fileID: 114932851129468788}
   m_Layer: 0
   m_Name: GhoulGetHit
   m_TagString: Untagged
@@ -145,5 +146,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f38f94282f1c8f45ac1bc792d455657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114932851129468788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958990623184836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c50d99a113f4d34880508e5dfc2d385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
