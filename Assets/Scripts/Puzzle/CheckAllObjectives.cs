@@ -10,6 +10,7 @@ public class CheckAllObjectives : MonoBehaviour, ITrigger
     public event Action OnComplete = delegate { };
     private List<ITrigger> objectives = new List<ITrigger>();
 
+    public bool Complete { get; set; }
     public ITrigger Parent { get; set; }
 
     public GameObject GameObject
@@ -17,7 +18,7 @@ public class CheckAllObjectives : MonoBehaviour, ITrigger
         get { return gameObject; }
     }
 
-    void Start()
+    void Awake()
     {
         objectives.AddRange(GetComponentsInChildren<ITrigger>(true).Where(e => e.Parent == null && e != this && e.GameObject.transform.parent == GameObject.transform));
         foreach (var obj in objectives)
@@ -35,6 +36,7 @@ public class CheckAllObjectives : MonoBehaviour, ITrigger
             if (Parent != null)
             {
                 Parent.OnTrigger(gameObject);
+                Complete = true;
             }
         }
     }

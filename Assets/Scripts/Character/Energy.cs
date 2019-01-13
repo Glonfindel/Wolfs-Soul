@@ -7,10 +7,7 @@ public class Energy : MonoBehaviour {
 
     public float CurrentEnergy
     {
-        get
-        {
-            return energy;
-        }
+        get { return energy; }
         set
         {
             energy = Mathf.Clamp(value, 0, maxEnergy);
@@ -19,12 +16,14 @@ public class Energy : MonoBehaviour {
             {
                 OnFullValue();
             }
+
             if (energy <= 0)
             {
                 OnZeroValue();
             }
         }
     }
+
     private float maxEnergy = 100;
     private float energy;
     public event Action OnValueChange = delegate { };

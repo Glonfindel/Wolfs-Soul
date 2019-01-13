@@ -8,7 +8,7 @@ public class OpenGate : MonoBehaviour
     public GameObject gate;
     private CheckAllObjectives checkAllObjectives;
 
-    void Start()
+    void Awake()
     {
         checkAllObjectives = GetComponent<CheckAllObjectives>();
         checkAllObjectives.OnComplete += Open;

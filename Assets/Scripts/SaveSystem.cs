@@ -54,5 +54,8 @@ public class SaveSystem : MonoBehaviour
         PlayerPrefs.SetString("Level" + index, SceneManager.GetActiveScene().name);
         PlayerPrefsX.SetVector3("Position" + index, CharacterController.Player.transform.position);
         PlayerPrefsX.SetQuaternion("Rotation" + index, CharacterController.Player.transform.rotation);
+        PlayerPrefs.SetFloat("Health" + index, CharacterController.Player.Health.CurrentHealth);
+        PlayerPrefs.SetFloat("Energy" + index, CharacterController.Player.Energy.CurrentEnergy);
+        PlayerPrefsX.SetStringArray("ITriggers" + index, Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)).OfType<ITrigger>().Where(e => e.Complete).Select(f => f.GameObject.name).ToArray());
     }
 }

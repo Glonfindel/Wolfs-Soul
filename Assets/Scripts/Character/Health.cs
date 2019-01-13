@@ -5,6 +5,18 @@ using UnityEngine;
 
 public class Health : MonoBehaviour, IDamageable
 {
+    public float CurrentHealth
+    {
+        get
+        {
+            return health;
+        }
+        set
+        {
+            health = Mathf.Clamp(value, 0, maxHealth);
+            OnHealed();
+        }
+    }
 
     [SerializeField] private float maxHealth = 100;
     private float health;

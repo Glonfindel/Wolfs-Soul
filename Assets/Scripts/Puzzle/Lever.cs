@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Lever : MonoBehaviour,ITrigger {
-
+    public bool Complete { get; set; }
     public ITrigger Parent { get; set; }
 
     public GameObject GameObject
@@ -21,6 +21,7 @@ public class Lever : MonoBehaviour,ITrigger {
         if (Parent != null && Parent.Check(gameObject))
         {
             Parent.OnTrigger(gameObject);
+            Complete = true;
         }
     }
 

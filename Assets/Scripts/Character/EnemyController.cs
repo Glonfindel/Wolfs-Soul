@@ -18,6 +18,8 @@ public class EnemyController : Controller, ITrigger
     {
         get { return gameObject; }
     }
+
+    public bool Complete { get; set; }
     public ITrigger Parent { get; set; }
 
     protected override void Awake()
@@ -38,10 +40,7 @@ public class EnemyController : Controller, ITrigger
 
     void CheckHP()
     {
-        if (Parent != null && Check(gameObject))
-        {
-            Parent.OnTrigger(gameObject);
-        }
+        OnTrigger(gameObject);
     }
 
     public bool Check(GameObject go)
@@ -54,6 +53,11 @@ public class EnemyController : Controller, ITrigger
         if (Parent != null && Parent.Check(gameObject))
         {
             Parent.OnTrigger(gameObject);
+            Complete = true;
+        }
+        else if (Check(gameObject))
+        {
+            Complete = true;
         }
     }
 

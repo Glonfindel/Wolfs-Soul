@@ -8,24 +8,31 @@ public class CharacterUI : MonoBehaviour {
     public Image health;
     public Image spiritEnergy;
     public GameObject highlight;
-    private CharacterController player;
 
 	void Start () {
-        player = FindObjectOfType<CharacterController>();
-        player.Health.OnDamageTaken += UpdateHP;
-	    player.Health.OnHealed += UpdateHP;
-        player.Energy.OnValueChange += UpdateMP;
-	    player.Energy.OnFullValue += Highlight;
-	    player.Energy.OnZeroValue += DisableHighlight;
+	    CharacterController.Player.Health.OnDamageTaken += UpdateHP;
+	    CharacterController.Player.Health.OnHealed += UpdateHP;
+	    CharacterController.Player.Energy.OnValueChange += UpdateMP;
+	    CharacterController.Player.Energy.OnFullValue += Highlight;
+	    CharacterController.Player.Energy.OnZeroValue += DisableHighlight;
     }
-	
-	void UpdateHP () {
-        health.fillAmount = player.Health.HealthAsPercentage;
+
+    private void OnDestroy()
+    {
+        CharacterController.Player.Health.OnDamageTaken -= UpdateHP;
+        CharacterController.Player.Health.OnHealed -= UpdateHP;
+        CharacterController.Player.Energy.OnValueChange -= UpdateMP;
+        CharacterController.Player.Energy.OnFullValue -= Highlight;
+        CharacterController.Player.Energy.OnZeroValue -= DisableHighlight;
+    }
+
+    void UpdateHP () {
+        health.fillAmount = CharacterController.Player.Health.HealthAsPercentage;
 	}
 
     void UpdateMP()
     {
-        spiritEnergy.fillAmount = player.Energy.EnergyAsPercentage * 0.82f;
+        spiritEnergy.fillAmount = CharacterController.Player.Energy.EnergyAsPercentage * 0.82f;
     }
 
     void Highlight()

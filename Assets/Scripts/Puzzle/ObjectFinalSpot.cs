@@ -12,6 +12,8 @@ public class ObjectFinalSpot : MonoBehaviour, ITrigger
     {
         get { return gameObject; }
     }
+
+    public bool Complete { get; set; }
     public ITrigger Parent { get; set; }
 
     private void Start()
@@ -31,6 +33,7 @@ public class ObjectFinalSpot : MonoBehaviour, ITrigger
         if (Parent != null && Parent.Check(gameObject))
         {
             Parent.OnTrigger(gameObject);
+            Complete = true;
         }
     }
 }

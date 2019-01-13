@@ -20,12 +20,6 @@ public class CharacterController : Controller
         Input = GetComponent<CharacterInput>();
         Energy = GetComponent<Energy>();
         Forms = GetComponentsInChildren<Animator>().ToDictionary(e => e.name);
-        int slot = PlayerPrefs.GetInt("Slot");
-        if (slot > 0)
-        {
-            transform.position = PlayerPrefsX.GetVector3("Position" + slot);
-            transform.rotation = PlayerPrefsX.GetQuaternion("Rotation" + slot);
-        }
         Transform(false);
     }
 
