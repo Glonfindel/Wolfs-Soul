@@ -40,7 +40,8 @@ public class EnemyController : Controller, ITrigger
 
     void CheckHP()
     {
-        OnTrigger(gameObject);
+        if (Check(gameObject))
+            OnTrigger(gameObject);
     }
 
     public bool Check(GameObject go)

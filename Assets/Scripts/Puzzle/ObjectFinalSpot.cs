@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ObjectFinalSpot : MonoBehaviour, ITrigger
 {
-    public MovingObject fitsHere; //Gameobject ktory ma tu byc docelowo
+    public MovingObject fitsHere;
     [NonSerialized] public bool isFull;
     private AudioSource soundOnTrigger;
     public GameObject GameObject
