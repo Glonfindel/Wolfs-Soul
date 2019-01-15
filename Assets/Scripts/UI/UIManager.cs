@@ -44,6 +44,7 @@ public class UIManager : MonoBehaviour
     }
     public void Restart()
     {
+        PlayerPrefs.SetInt("Slot", 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }

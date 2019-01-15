@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
-public class Loader : MonoBehaviour {
+public class Loader : MonoBehaviour
+{
 
     IEnumerator Start()
     {
@@ -16,11 +18,13 @@ public class Loader : MonoBehaviour {
                 var trigger = Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)).OfType<ITrigger>().FirstOrDefault(e => e.GameObject.name == obj);
                 if (trigger != null)
                 {
+                    if (EditorUtility.IsPersistent(trigger.GameObject))
+                        continue;
                     if (trigger.Parent != null)
                         trigger.Parent.OnTrigger(trigger.GameObject);
 
                     if (trigger is EnemyController)
-                        DestroyImmediate(trigger.GameObject, true);
+                        Destroy(trigger.GameObject);
                 }
             }
             CharacterController.Player.transform.position = PlayerPrefsX.GetVector3("Position" + slot);
