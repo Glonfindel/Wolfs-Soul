@@ -11,6 +11,7 @@ public partial class WerewolfStateMachineAsset
 
         state = new State("GetHit");
         stateMachine.AddState(state);
+        state.AddBehaviour(new SpawnEffectOnEnterBehaviour(Resources.Load<GameObject>("SFX/WerewolfHit")));
         state.AddBehaviour(new PlayAnimationBehaviour("GetHit", 0f));
         state.AddBehaviour(new DrainEnergyBehaviour(3));
 

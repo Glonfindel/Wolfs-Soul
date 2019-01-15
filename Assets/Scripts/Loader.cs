@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Loader : MonoBehaviour
 {
@@ -15,11 +15,9 @@ public class Loader : MonoBehaviour
         {
             foreach (var obj in PlayerPrefsX.GetStringArray("ITriggers" + slot))
             {
-                var trigger = Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)).OfType<ITrigger>().FirstOrDefault(e => e.GameObject.name == obj);
+                var trigger = FindObjectsOfTypeAll<MonoBehaviour>().OfType<ITrigger>().FirstOrDefault(e => e.GameObject.name == obj);
                 if (trigger != null)
                 {
-                    if (EditorUtility.IsPersistent(trigger.GameObject))
-                        continue;
                     if (trigger.Parent != null)
                         trigger.Parent.OnTrigger(trigger.GameObject);
 
@@ -32,5 +30,23 @@ public class Loader : MonoBehaviour
             CharacterController.Player.Health.CurrentHealth = PlayerPrefs.GetFloat("Health" + slot);
             CharacterController.Player.Energy.CurrentEnergy = PlayerPrefs.GetFloat("Energy" + slot);
         }
+    }
+    public static List<T> FindObjectsOfTypeAll<T>()
+    {
+        List<T> results = new List<T>();
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            var s = SceneManager.GetSceneAt(i);
+            if (s.isLoaded)
+            {
+                var allGameObjects = s.GetRootGameObjects();
+                for (int j = 0; j < allGameObjects.Length; j++)
+                {
+                    var go = allGameObjects[j];
+                    results.AddRange(go.GetComponentsInChildren<T>(true));
+                }
+            }
+        }
+        return results;
     }
 }

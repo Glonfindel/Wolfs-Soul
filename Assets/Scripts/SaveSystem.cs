@@ -56,6 +56,6 @@ public class SaveSystem : MonoBehaviour
         PlayerPrefsX.SetQuaternion("Rotation" + index, CharacterController.Player.transform.rotation);
         PlayerPrefs.SetFloat("Health" + index, CharacterController.Player.Health.CurrentHealth);
         PlayerPrefs.SetFloat("Energy" + index, CharacterController.Player.Energy.CurrentEnergy);
-        PlayerPrefsX.SetStringArray("ITriggers" + index, PlayerPrefsX.GetStringArray("ITriggers" + PlayerPrefs.GetInt("Slot")).Concat(Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)).OfType<ITrigger>().Where(e => e.Complete).Select(f => f.GameObject.name).ToArray()).ToArray());
+        PlayerPrefsX.SetStringArray("ITriggers" + index, PlayerPrefsX.GetStringArray("ITriggers" + PlayerPrefs.GetInt("Slot")).Concat(Loader.FindObjectsOfTypeAll<MonoBehaviour>().OfType<ITrigger>().Where(e => e.Complete).Select(f => f.GameObject.name).ToArray()).ToArray());
     }
 }
